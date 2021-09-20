@@ -23,6 +23,12 @@ import Marine from "../assets/nft/cyborgs/marine.png";
 import Tactician from "../assets/nft/cyborgs/tactician.png";
 import Warrior from "../assets/nft/cyborgs/warrior.png";
 
+import AviatorMobile from "../assets/nft/cyborg-mobile/aviator-mobile.svg";
+import BrawlerMobile from "../assets/nft/cyborg-mobile/brawler-mobile.svg";
+import MarineMobile from "../assets/nft/cyborg-mobile/marine-mobile.svg";
+import WarriorMobile from "../assets/nft/cyborg-mobile/warrior-mobile.svg";
+import TacticianMobile from "../assets/nft/cyborg-mobile/tactician-mobile.svg";
+
 import PlanetBrown from "../assets/nft/decorative/planet-brown.svg";
 import Meteor from "../assets/nft/decorative/meteor.svg";
 import PlanetBlue from "../assets/nft/decorative/planet-blue.svg";
@@ -49,12 +55,12 @@ function NFT(props: RouteComponentProps) {
     <div className="relative pb-20" style={{ background: "#101010" }}>
       <Nav />
       <div
-        className=" text-white w-full h-screen px-30 py-40 relative bg-center bg-cover  grid grid-cols-2"
+        className=" text-white w-full lg:h-screen lg:px-30 lg:py-40  px-10  py-16 relative bg-center bg-cover lg:grid lg:grid-cols-2"
         id="nft-drop-hero"
       >
         <div className="flex flex-col items-start justify-center">
           <h1
-            className="font-black italic text-7xl uppercase  transform transition-all opacity-0 -translate-x-8 duration-500 ease-out"
+            className="font-black italic lg:text-7xl text-5xl uppercase  transform transition-all opacity-0 -translate-x-8 duration-500 ease-out"
             ref={headingRef}
           >
             <span
@@ -65,10 +71,10 @@ function NFT(props: RouteComponentProps) {
             </span>
             <br /> NFT drop
           </h1>
-          <p className="uppercase font-black italic text-xl mt-7">
+          <p className="uppercase font-black italic text-xl mt-7  hidden lg:block">
             first ip drop by sgf media house
           </p>
-          <div className="mt-8 font-orb flex flex-wrap">
+          <div className="mt-8 font-orb flex-wrap hidden lg:flex">
             <Link to="/roadmap" className="btn-primary font-black mt-4 mr-3">
               ROADMAP
             </Link>
@@ -82,57 +88,89 @@ function NFT(props: RouteComponentProps) {
             </a>
           </div>
         </div>
-        <div className="grid items-center justify-center">
+        <div className="grid items-center justify-center mt-10">
           <div
-            className="border-primary-light rounded-md border-8 w-1/2 mx-auto transition-all  transform duration-500 ease-out opacity-0 translate-x-8 scale-75"
+            className="border-primary-light rounded-md border-8 lg:w-1/2 mx-auto transition-all  transform duration-500 ease-out opacity-0 translate-x-8 scale-75"
             ref={cyborgGif}
           >
             <img src={HeroCyborg} alt="Cyborg hero" />
           </div>
         </div>
+        <div className="mt-8 font-orb flex flex-col items-center lg:hidden">
+          <Link to="/roadmap" className="btn-primary font-black mt-4 lg:mr-3">
+            ROADMAP
+          </Link>
+          <a
+            href="https://discord.com/invite/bBeHKHHSu5"
+            target="_blank"
+            rel="noreferrer"
+            className="btn-secondary font-black mt-4"
+          >
+            JOIN DISCORD
+          </a>
+        </div>
       </div>
-      <div className="py-14 px-48 uppercase relative">
+      <div className="lg:py-14 lg:px-48  px-10 py-16 uppercase relative">
         <img
           src={PlanetBrown}
           alt="Brown Planet"
-          className="absolute top-0 left-0"
+          className="absolute top-0 left-0 hidden lg:block"
         />
-        <h1 className="text-5xl text-primary-light glow font-black italic text-center">
+        <h1 className="lg:text-5xl text-4xl text-primary-light glow font-black italic text-center">
           mint details
         </h1>
-        <div className="grid grid-cols-3 text-white font-orb font-black text-center mt-16">
-          <div className="grid grid-rows-2 space-y-5">
-            <div className="text-5xl whitespace-nowrap truncate">10,000</div>
-            <div className="text-3xl whitespace-nowrap truncate">
+        <div className="grid lg:grid-cols-3 grid-cols-1 gap-5 text-white font-orb font-black text-center mt-16">
+          <div className="grid grid-rows-2 lg:space-y-5 space-y-2">
+            <div className="lg:text-5xl text-3xl whitespace-nowrap truncate">
+              10,000
+            </div>
+            <div className="lg:text-3xl text-2xl whitespace-nowrap truncate">
               gen-1 cyborgs
             </div>
           </div>
-          <div className="grid grid-rows-2 space-y-5">
-            <div className="text-5xl whitespace-nowrap truncate">0.99 SOL</div>
-            <div className="text-3xl whitespace-nowrap truncate">
+          <div className="grid grid-rows-2 lg:space-y-5 space-y-2">
+            <div className="lg:text-5xl text-3xl whitespace-nowrap truncate">
+              0.99 SOL
+            </div>
+            <div className="lg:text-3xl text-2xl whitespace-nowrap truncate">
               mint price
             </div>
           </div>
-          <div className="grid grid-rows-2 space-y-5">
-            <div className="text-5xl whitespace-nowrap truncate">TBD</div>
-            <div className="text-3xl whitespace-nowrap truncate">mint date</div>
+          <div className="grid grid-rows-2 lg:space-y-5 space-y-2">
+            <div className="lg:text-5xl text-3xl whitespace-nowrap truncate">
+              TBD
+            </div>
+            <div className="lg:text-3xl text-2xl whitespace-nowrap truncate">
+              mint date
+            </div>
           </div>
         </div>
       </div>
-      <div className="py-14  mt-24 relative">
+      <div className="py-14 px-10 mt-24 relative">
         <img
           src={StoneGrey}
           alt="StoneGrey"
-          className="absolute top-0 right-0"
+          className="absolute top-0 right-0 hidden lg:block"
         />
-        <h1 className="text-primary-light text-5xl text-center uppercase glow font-black italic">
+        <h1 className="text-primary-light lg:text-5xl text-4xl text-center uppercase glow font-black italic">
           Rarities explained
         </h1>
         <p className="text-white uppercase font-orb font-black text-2xl mt-16 text-center">
           sgf cyborgs are divided into{" "}
           <span className="text-primary-dark">5 forces</span>
         </p>
-        <img src={Cyborgs} alt="cyborgs" className="mt-14 mx-auto" />
+        <img
+          src={Cyborgs}
+          alt="cyborgs"
+          className="mt-14 mx-auto hidden lg:block"
+        />
+        <div className="mt-14 mx-auto flex flex-col space-y-10 lg:hidden">
+          <img src={AviatorMobile} alt="" />
+          <img src={BrawlerMobile} alt="" />
+          <img src={MarineMobile} alt="" />
+          <img src={WarriorMobile} alt="" />
+          <img src={TacticianMobile} alt="" />
+        </div>
         <div className="text-white font-orb uppercase relative px-48 ">
           <img
             src={Satelite}

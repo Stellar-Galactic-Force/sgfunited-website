@@ -42,7 +42,7 @@ function Landing(props) {
 
   return (
     <div className="relative">
-      {/* <Nav /> */}
+      <Nav />
       <div
         ref={effectRef}
         className="bg-black text-white w-full h-screen flex items-center px-10 py-14 lg:px-30 lg:py-40 relative"

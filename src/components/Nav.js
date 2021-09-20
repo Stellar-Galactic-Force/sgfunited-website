@@ -7,7 +7,7 @@ function Nav() {
   const { pathname } = useLocation();
   console.log(pathname);
   return (
-    <header className="text-white bg-black fixed z-20 top-0 inset-x-0 h-16 flex justify-between items-center px-16">
+    <header className="text-white bg-black fixed z-20 top-0 inset-x-0 h-16 justify-between items-center px-16  hidden lg:flex">
       <div className="flex items-center space-x-10">
         <div>
           <Link to="/">
