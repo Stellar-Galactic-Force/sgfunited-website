@@ -28,6 +28,7 @@ import BrawlerMobile from "../assets/nft/cyborg-mobile/brawler-mobile.svg";
 import MarineMobile from "../assets/nft/cyborg-mobile/marine-mobile.svg";
 import WarriorMobile from "../assets/nft/cyborg-mobile/warrior-mobile.svg";
 import TacticianMobile from "../assets/nft/cyborg-mobile/tactician-mobile.svg";
+import CyborgBreakdownMobile from "../assets/nft/cyborg-mobile/cyborg-breakdown-mobile.svg";
 
 import PlanetBrown from "../assets/nft/decorative/planet-brown.svg";
 import Meteor from "../assets/nft/decorative/meteor.svg";
@@ -47,12 +48,15 @@ function NFT(props: RouteComponentProps) {
 
     headingGlow.current?.classList.add("glow");
 
-    cyborgGif.current?.classList.remove("translate-x-8");
+    cyborgGif.current?.classList.remove("lg:translate-x-8");
     cyborgGif.current?.classList.remove("opacity-0");
     cyborgGif.current?.classList.remove("scale-75");
   }, []);
   return (
-    <div className="relative pb-20" style={{ background: "#101010" }}>
+    <div
+      className="relative pb-20 overflow-x-hidden"
+      style={{ background: "#101010" }}
+    >
       <Nav />
       <div
         className=" text-white w-full lg:h-screen lg:px-30 lg:py-40  px-10  py-16 relative bg-center bg-cover lg:grid lg:grid-cols-2"
@@ -90,7 +94,7 @@ function NFT(props: RouteComponentProps) {
         </div>
         <div className="grid items-center justify-center mt-10">
           <div
-            className="border-primary-light rounded-md border-8 lg:w-1/2 mx-auto transition-all  transform duration-500 ease-out opacity-0 translate-x-8 scale-75"
+            className="border-primary-light rounded-md lg:border-8 border-4 lg:w-1/2 mx-auto transition-all  transform duration-500 ease-out opacity-0 lg:translate-x-8 scale-75"
             ref={cyborgGif}
           >
             <img src={HeroCyborg} alt="Cyborg hero" />
@@ -164,33 +168,33 @@ function NFT(props: RouteComponentProps) {
           alt="cyborgs"
           className="mt-14 mx-auto hidden lg:block"
         />
-        <div className="mt-14 mx-auto flex flex-col space-y-10 lg:hidden">
+        <div className="mt-14 mx-auto w-5/6 flex flex-col space-y-10 lg:hidden">
           <img src={AviatorMobile} alt="" />
           <img src={BrawlerMobile} alt="" />
           <img src={MarineMobile} alt="" />
           <img src={WarriorMobile} alt="" />
           <img src={TacticianMobile} alt="" />
         </div>
-        <div className="text-white font-orb uppercase relative px-48 ">
+        <div className="text-white font-orb uppercase relative lg:px-48">
           <img
             src={Satelite}
             alt="Satelite"
-            className="absolute top-0 left-0"
+            className="absolute top-0 left-0 hidden lg:block"
           />
           <p className="text-2xl font-black text-center mt-28">
             further division comes across{" "}
             <span className="text-primary-dark">ranks</span>
           </p>
 
-          <div className="grid grid-cols-3 text-center mt-16 max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-3 grid-cols-1 text-center mt-16 max-w-6xl mx-auto gap-12">
             <div className="flex flex-col">
               <div className="flex items-center justify-center">
                 <img src={General} alt="" />
               </div>
-              <div className="mt-3 text-3xl">
+              <div className="lg:mt-3 lg:text-3xl text-2xl">
                 <p>General</p>
               </div>
-              <div className="text-lg mt-2">
+              <div className="text-lg mt-1">
                 <p>Lead from the front</p>
               </div>
               <div className="text-lg mt-0.5 text-yellow-200">
@@ -201,10 +205,10 @@ function NFT(props: RouteComponentProps) {
               <div className="flex items-center justify-center">
                 <img src={Lieutenant} alt="" />
               </div>
-              <div className="mt-3 text-3xl font-medium">
+              <div className="lg:mt-3 lg:text-3xl text-2xl">
                 <p>LIEUTENANT </p>
               </div>
-              <div className="text-lg mt-2">
+              <div className="text-lg mt-1">
                 <p>scale the impact</p>
               </div>
               <div className="text-lg mt-0.5 text-blue-200">
@@ -215,10 +219,10 @@ function NFT(props: RouteComponentProps) {
               <div className="flex items-center justify-center">
                 <img src={Soldier} alt="" />
               </div>
-              <div className="mt-3 text-3xl font-medium">
+              <div className="lg:mt-3 lg:text-3xl text-2xl">
                 <p>Soldier</p>
               </div>
-              <div className="text-lg mt-2">
+              <div className="text-lg mt-1">
                 <p>execute bravely</p>
               </div>
               <div className="text-lg mt-0.5 text-green-200">
@@ -227,29 +231,38 @@ function NFT(props: RouteComponentProps) {
             </div>
           </div>
         </div>
-        <div className="text-center px-36 relative">
-          <img src={Meteor} alt="Meteor" className="absolute right-0 top-0" />
-          <h1 className="font-orb font-black text-white text-3xl mt-36 uppercase">
+        <div className="text-center lg:px-36 relative">
+          <img
+            src={Meteor}
+            alt="Meteor"
+            className="absolute right-0 top-0 hidden lg:block"
+          />
+          <h1 className="font-orb font-black text-white text-2xl mt-36 uppercase">
             Then each cyborg embraces unique set of{" "}
             <span className="text-primary-dark">traits</span>
           </h1>
           <img
             src={CyborgBreakdown}
             alt="cyborg-details"
-            className="mx-auto mt-16"
+            className="mx-auto mt-16 hidden lg:block"
+          />
+          <img
+            src={CyborgBreakdownMobile}
+            alt="cyborg-details"
+            className="mt-16 mx-auto lg:hidden block"
           />
         </div>
-        <div className="text-center mt-36 text-white uppercase font-orb px-52 relative">
+        <div className="text-center mt-36 text-white uppercase font-orb lg:px-52 relative">
           <img
             src={WhiteSpaceship}
             alt="WhiteSpaceship"
-            className="absolute top-0 left-0"
+            className="absolute top-0 left-0 hidden lg:block"
           />
           <h1 className="text-3xl font-black ">
             lastly <span className="text-primary-dark">bg</span> reflects
             cybgorg's space base posting
           </h1>
-          <div className="mt-16 grid grid-cols-4 gap-14 text-lg font-medium max-w-6xl mx-auto">
+          <div className="mt-16 grid-cols-4 gap-14 text-lg font-medium max-w-6xl mx-auto hidden lg:grid">
             <div>
               <img src={Mercury} alt="" className="mx-auto" />
               <p className="mt-5">mercury</p>
@@ -267,7 +280,7 @@ function NFT(props: RouteComponentProps) {
               <p className="mt-5">Jupiter</p>
             </div>
           </div>
-          <div className="mt-10 grid grid-cols-3 gap-14 text-lg font-medium max-w-3xl mx-auto">
+          <div className="mt-10 hidden lg:grid grid-cols-3 gap-14 text-lg font-medium max-w-3xl mx-auto">
             <div>
               <img src={Saturn} alt="" className="mx-auto" />
               <p className="mt-5">Saturn</p>
@@ -281,9 +294,41 @@ function NFT(props: RouteComponentProps) {
               <p className="mt-5">Neptune</p>
             </div>
           </div>
+          <div className="lg:hidden block">
+            <div className="mt-16 gap-5 grid grid-cols-2">
+              <div>
+                <img src={Mercury} alt="" className="mx-auto" />
+                <p className="mt-5">mercury</p>
+              </div>
+              <div>
+                <img src={Earth} alt="" className="mx-auto" />
+                <p className="mt-5">Earth</p>
+              </div>
+              <div>
+                <img src={Mars} alt="" className="mx-auto" />
+                <p className="mt-5">Mars</p>
+              </div>
+              <div>
+                <img src={Jupiter} alt="" className="mx-auto" />
+                <p className="mt-5">Jupiter</p>
+              </div>
+              <div>
+                <img src={Saturn} alt="" className="mx-auto" />
+                <p className="mt-5">Saturn</p>
+              </div>
+              <div>
+                <img src={Uranus} alt="" className="mx-auto" />
+                <p className="mt-5">Uranus</p>
+              </div>
+            </div>
+            <div className="mt-10">
+              <img src={Neptune} alt="" className="mx-auto" />
+              <p className="mt-5">Neptune</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="py-14 px-36 mt-24 relative">
+      <div className="py-14 px-36 mt-24 relative hidden lg:block">
         <img
           src={PlanetBlue}
           alt="PlanetBlue"
@@ -396,12 +441,12 @@ function NFT(props: RouteComponentProps) {
         </div>
       </div>
       <div className="mt-8 font-orb ">
-        <p className="text-sm font-medium text-gray text-center font-inter">
+        <p className="text-sm font-medium text-gray text-center font-inter mx-10">
           Can’t find an answer to your query? Don’t worry, we’ve got your
           back...
         </p>
         <div className="flex flex-wrap justify-center items-center">
-          <Link to="/roadmap" className="btn-primary font-black mt-4 mr-3">
+          <Link to="/roadmap" className="btn-primary font-black mt-4 lg:mr-3">
             ROADMAP
           </Link>
           <a

@@ -41,7 +41,7 @@ function Landing(props) {
   }, [effect]);
 
   return (
-    <div className="relative">
+    <div className="relative overflow-x-hidden">
       <Nav />
       <div
         ref={effectRef}
