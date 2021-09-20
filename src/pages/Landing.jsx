@@ -42,14 +42,14 @@ function Landing(props) {
 
   return (
     <div className="relative">
-      <Nav />
+      {/* <Nav /> */}
       <div
         ref={effectRef}
-        className="bg-black text-white w-full h-screen flex items-center px-30 py-40 relative"
+        className="bg-black text-white w-full h-screen flex items-center px-10 py-14 lg:px-30 lg:py-40 relative"
       >
         <div className="max-w-5xl">
           <h1
-            className="text-7xl font-black italic transform transition-all opacity-0 -translate-x-6 duration-900 ease-out"
+            className="lg:text-7xl text-4xl t font-black italic transform transition-all opacity-0 -translate-x-6 duration-900 ease-out"
             ref={headingRef}
           >
             1st COMMUNITY-OWNED{" "}
@@ -62,7 +62,7 @@ function Landing(props) {
             🔭 BUILT ON SOLANA
           </h1>
 
-          <div className="mt-10 space-x-5 font-orb">
+          <div className="mt-10 lg:space-x-5  space-y-4  lg:space-y-0 font-orb  mx-auto">
             <Link to="/nft" className="btn-primary font-black">
               GEN-1 NFT DROP
             </Link>
@@ -80,23 +80,22 @@ function Landing(props) {
           <div className="absolute bg-primary-light -inset-1 z-0 opacity-80  rounded filter blur"></div>
           <Ticker>
             {() => (
-              <div className="relative z-10 bg-primary-light py-3 ml-3 font-medium">
-                {" "}
-                * LAUNCHING ON TBD SEPTEMBER * MINT PRICE 0.99 SOL *{" "}
+              <div className="relative z-10 bg-primary-light py-3 lg:ml-3 font-medium text-xs">
+                LAUNCHING ON TBD SEPTEMBER * MINT PRICE 0.99 SOL *
               </div>
             )}
           </Ticker>
         </div>
       </div>
       <div
-        className="h-screen bg-center bg-cover flex items-center px-30 relative bg-gray-dark"
+        className="h-screen bg-center bg-cover flex items-center lg:px-30 px-10 relative bg-gray-dark"
         id="landing-section-2"
       >
         <div className="w-full">
-          <h1 className="text-primary-light text-5xl font-black italic glow text-center">
+          <h1 className="text-primary-light lg:text-5xl text-4xl font-black italic glow lg:text-center">
             AHOY SPACE CADETS
           </h1>
-          <div className="font-orb font-black text-3xl text-center text-white mt-10 space-y-2 uppercase">
+          <div className="font-orb font-black lg:text-3xl text-2xl lg:text-center text-white mt-10 space-y-2 uppercase">
             <p>
               Welcome To{" "}
               <span className="text-primary-dark glow">
@@ -113,15 +112,15 @@ function Landing(props) {
         </div>
       </div>
       <div
-        className="h-screen bg-center bg-cover relative  pb-28 pt-44 pl-36"
+        className="lg:h-screen bg-center bg-cover relative  lg:pb-28 lg:pt-44 lg:pl-36 px-10 py-16"
         id="vision"
       >
-        <div className="grid grid-cols-2">
+        <div className="lg:grid lg:grid-cols-2">
           <div className="text-white">
-            <h1 className="text-primary-light glow text-5xl font-black italic uppercase">
+            <h1 className="text-primary-light glow lg:text-5xl text-4xl font-black italic uppercase">
               SGF's Vision
             </h1>
-            <div className="uppercase font-orb text-3xl mt-10 font-black">
+            <div className="uppercase font-orb lg:text-3xl text-2xl mt-10 font-black">
               <p>
                 To build <br />
                 the Sci-Fi media house <br />
@@ -134,11 +133,11 @@ function Landing(props) {
           <img
             src={Spaceship}
             alt="spaceship"
-            className="justify-self-end w-5/6"
+            className="justify-self-end w-5/6 hidden lg:block"
           />
         </div>
         <div>
-          <p className="mt-10 text-white text-3xl font-orb uppercase font-black">
+          <p className="mt-10 text-white lg:text-3xl text-2xl font-orb uppercase font-black">
             Intellectual property DROPs planned:
             <br />
             <span className="text-primary-dark glow">
@@ -146,7 +145,7 @@ function Landing(props) {
             </span>
           </p>
 
-          <div className="mt-10 space-x-3 font-orb">
+          <div className="mt-10 lg:space-x-3 lg:space-y-0 space-y-3 font-orb">
             <Link to="/nft" className="btn-primary font-black">
               GEN-1 NFT DROP
             </Link>
@@ -161,13 +160,16 @@ function Landing(props) {
           </div>
         </div>
       </div>
-      <div className="h-screen bg-center bg-cover pt-40 relative" id="team">
+      <div
+        className="lg:h-screen bg-center bg-cover lg:pt-40 px-10 py-16 relative"
+        id="team"
+      >
         <div className="bg-black bg-opacity-40 h-full absolute inset-0 z-0"></div>
         <div className="relative z-10">
-          <h1 className="uppercase text-primary-light glow font-black italic text-5xl text-center">
+          <h1 className="uppercase text-primary-light glow font-black italic lg:text-5xl text-4xl text-center">
             Stellar team
           </h1>
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto hidden lg:block">
             <div className="grid grid-cols-3 font-orb text-white mt-20">
               <div className="space-y-2">
                 <img src={Avatar} alt="" className="mx-auto" />
@@ -191,6 +193,51 @@ function Landing(props) {
                 <img src={Avatar} alt="" className="mx-auto" />
                 <p className="text-center">@skywalker</p>
               </div>
+            </div>
+          </div>
+          <div className="max-w-4xl mx-auto lg:hidden block">
+            <div className="grid grid-cols-2 font-orb text-white mt-10 gap-5">
+              <div className="space-y-2">
+                <img
+                  src={Avatar}
+                  alt=""
+                  className="mx-auto w-30 h-30 lg:w-auto lg:h-auto"
+                />
+                <p className="text-center">@kayden</p>
+              </div>
+              <div className="space-y-2">
+                <img
+                  src={Avatar}
+                  alt=""
+                  className="mx-auto w-30 h-30 lg:w-auto lg:h-auto"
+                />
+                <p className="text-center">@nonfungibleprime</p>
+              </div>
+              <div className="space-y-2">
+                <img
+                  src={Avatar}
+                  alt=""
+                  className="mx-auto w-30 h-30 lg:w-auto lg:h-auto"
+                />
+                <p className="text-center">@greywolf</p>
+              </div>
+              <div className="space-y-2">
+                <img
+                  src={Avatar}
+                  alt=""
+                  className="mx-auto w-30 h-30 lg:w-auto lg:h-auto"
+                />
+                <p className="text-center">@alphatron</p>
+              </div>
+            </div>
+
+            <div className="space-y-2 mt-5 font-orb">
+              <img
+                src={Avatar}
+                alt=""
+                className="mx-auto w-30 h-30 lg:w-auto lg:h-auto"
+              />
+              <p className="text-center text-white">@skywalker</p>
             </div>
           </div>
         </div>
