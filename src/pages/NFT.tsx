@@ -17,11 +17,11 @@ import Saturn from "../assets/nft/bg/saturn-bg.png";
 import Uranus from "../assets/nft/bg/uranus-bg.png";
 import Neptune from "../assets/nft/bg/neptune-bg.png";
 
-import Aviator from "../assets/nft/cyborgs/aviator.svg";
-import Brawler from "../assets/nft/cyborgs/brawler.svg";
-import Marine from "../assets/nft/cyborgs/marine.svg";
-import Tactician from "../assets/nft/cyborgs/tactician.svg";
-import Warrior from "../assets/nft/cyborgs/warrior.svg";
+import Aviator from "../assets/nft/cyborgs/aviator.png";
+import Brawler from "../assets/nft/cyborgs/brawler.png";
+import Marine from "../assets/nft/cyborgs/marine.png";
+import Tactician from "../assets/nft/cyborgs/tactician.png";
+import Warrior from "../assets/nft/cyborgs/warrior.png";
 
 import PlanetBrown from "../assets/nft/decorative/planet-brown.svg";
 import Meteor from "../assets/nft/decorative/meteor.svg";
@@ -264,7 +264,7 @@ function NFT(props: RouteComponentProps) {
               <img
                 src={Aviator}
                 alt="Shadowy Super Cyborg"
-                className="mt-auto"
+                className="mt-auto w-4/5"
               />
             </div>
             <div>
@@ -284,7 +284,7 @@ function NFT(props: RouteComponentProps) {
               <img
                 src={Warrior}
                 alt="Shadowy Super Cyborg"
-                className="mt-auto"
+                className="mt-auto w-4/5"
               />
             </div>
             <div>
@@ -306,7 +306,7 @@ function NFT(props: RouteComponentProps) {
               <img
                 src={Marine}
                 alt="Shadowy Super Cyborg"
-                className="mt-auto"
+                className="mt-auto w-4/5"
               />
             </div>
             <div>
@@ -326,7 +326,7 @@ function NFT(props: RouteComponentProps) {
               <img
                 src={Brawler}
                 alt="Shadowy Super Cyborg"
-                className="mt-auto"
+                className="mt-auto w-4/5"
               />
             </div>
             <div>
@@ -346,7 +346,7 @@ function NFT(props: RouteComponentProps) {
               <img
                 src={Tactician}
                 alt="Shadowy Super Cyborg"
-                className="mt-auto"
+                className="mt-auto w-4/5"
               />
             </div>
             <div>

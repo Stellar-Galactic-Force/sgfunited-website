@@ -82,7 +82,7 @@ function Landing(props) {
             {() => (
               <div className="relative z-10 bg-primary-light py-3 ml-3 font-medium">
                 {" "}
-                * LAUNCHING ON 15TH SEPTEMBER * MINT PRICE 0.99 SOL *{" "}
+                * LAUNCHING ON TBD SEPTEMBER * MINT PRICE 0.99 SOL *{" "}
               </div>
             )}
           </Ticker>

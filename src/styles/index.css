@@ -19,21 +19,27 @@
 }
 
 .btn-primary {
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   background-color: white;
   color: #101010;
   font-size: 16px;
-  padding: 12px 54px;
+  padding: 12px 0;
+  width: 280px;
   border-radius: 6px;
   border: 4px solid white;
 }
 
 .btn-secondary {
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   background-color: #101010;
   color: white;
   font-size: 16px;
-  padding: 12px 54px;
+  padding: 12px 0;
+  width: 280px;
   border-radius: 6px;
   border: 4px solid white;
 }
