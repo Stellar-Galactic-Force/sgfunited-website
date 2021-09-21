@@ -7,11 +7,18 @@ import RoadmapImage from "../assets/roadmap/roadmap.svg";
 
 function Roadmap(props: RouteComponentProps) {
   const headingRef = useRef<HTMLHeadingElement>(null);
+  const shipRef = useRef<HTMLImageElement>(null);
+
   useEffect(() => {
     headingRef.current?.classList.remove("-translate-y-8");
     headingRef.current?.classList.remove("opacity-0");
     headingRef.current?.classList.remove("scale-90");
     headingRef.current?.classList.add("glow");
+
+    shipRef.current?.classList.remove("translate-y-6");
+    shipRef.current?.classList.remove("translate-x-10");
+    shipRef.current?.classList.remove("scale-90");
+    shipRef.current?.classList.remove("opacity-0");
   }, []);
   return (
     <div style={{ background: "#101010" }} className="pb-30">
@@ -21,12 +28,17 @@ function Roadmap(props: RouteComponentProps) {
         className="w-full h-screen py-40 relative bg-center bg-cover"
       >
         <h1
-          className="text-primary-light text-6xl uppercase font-black italic text-center duration-400 transition-all ease-out transform -translate-y-8 opacity-0 scale-90"
+          className="text-primary-light text-6xl uppercase font-black italic text-center duration-500 transition-all ease-out transform -translate-y-8 opacity-0 scale-90"
           ref={headingRef}
         >
           Roadmap
         </h1>
-        <img src={Ship} alt="Super Cool Spaceship" className="mt-10 mx-auto" />
+        <img
+          src={Ship}
+          alt="Super Cool Spaceship"
+          className="mt-10 mx-auto transition-all duration-500 transform translate-y-6 translate-x-10 scale-90 opacity-0"
+          ref={shipRef}
+        />
       </div>
       <div className="text-white ml-5 mr-10 lg:mx-48 -mt-48 relative z-10">
         <div className="flex">

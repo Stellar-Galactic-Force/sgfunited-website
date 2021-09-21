@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Link, RouteComponentProps } from "@reach/router";
 import { Disclosure } from "@headlessui/react";
 
@@ -69,11 +69,20 @@ function FAQ(props: RouteComponentProps) {
     },
   ];
 
+  const headingRef = useRef<HTMLHeadingElement>(null);
+
+  useEffect(() => {
+    headingRef.current?.classList.remove("opacity-0");
+  }, []);
+
   return (
     <div style={{ background: "#101010" }} className="min-h-screen">
       <Nav />
       <main className="py-36">
-        <h1 className="text-center text-primary-light glow text-5xl font-black italic">
+        <h1
+          className="text-center text-primary-light glow text-5xl font-black italic transition-all opacity-0 duration-700"
+          ref={headingRef}
+        >
           FAQS
         </h1>
         <section className="relative mt-10 lg:-mt-10  lg:px-52 px-10">

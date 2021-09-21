@@ -5,8 +5,14 @@ import RevenueShare from "../assets/tokenomics/revenue-share.svg";
 import RoyaltyBreakdwon from "../assets/tokenomics/royalty-breakdown-mobile.svg";
 import Summary from "../assets/tokenomics/summary-illustration.svg";
 import SummaryMobile from "../assets/tokenomics/summary-mobile.svg";
+import { useEffect, useRef } from "react";
 
 function Tokenomics(props: RouteComponentProps) {
+  const headingRef = useRef<HTMLHeadingElement>(null);
+
+  useEffect(() => {
+    headingRef.current?.classList.remove("opacity-0");
+  }, []);
   return (
     <div className="min-h-screen pb-30" style={{ background: "#101010" }}>
       <Nav />
@@ -16,7 +22,10 @@ function Tokenomics(props: RouteComponentProps) {
           className="w-full bg-cover bg-center bg-no-repeat flex justify-center items-center lg:pt-56 lg:pb-44 lg:px-0   px-24 py-44"
           id="tokenomics-hero"
         >
-          <h1 className="text-center text-white font-black italic lg:text-7xl text-5xl">
+          <h1
+            className="text-center text-white font-black italic lg:text-7xl text-5xl transition-all opacity-0 duration-700"
+            ref={headingRef}
+          >
             WHERE NFT ⛓<br />
             MEETS <span className="text-primary-light glow">SCI-FI</span>
           </h1>
