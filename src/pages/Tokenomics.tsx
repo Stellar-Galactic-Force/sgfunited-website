@@ -2,7 +2,9 @@ import { Link, RouteComponentProps } from "@reach/router";
 import Nav from "../components/Nav";
 
 import RevenueShare from "../assets/tokenomics/revenue-share.svg";
+import RoyaltyBreakdwon from "../assets/tokenomics/royalty-breakdown-mobile.svg";
 import Summary from "../assets/tokenomics/summary-illustration.svg";
+import SummaryMobile from "../assets/tokenomics/summary-mobile.svg";
 
 function Tokenomics(props: RouteComponentProps) {
   return (
@@ -11,33 +13,40 @@ function Tokenomics(props: RouteComponentProps) {
       <main>
         {/* Hero section */}
         <div
-          className="w-full bg-cover bg-center bg-no-repeat flex justify-center items-center pt-56 pb-44"
+          className="w-full bg-cover bg-center bg-no-repeat flex justify-center items-center lg:pt-56 lg:pb-44 lg:px-0   px-24 py-44"
           id="tokenomics-hero"
         >
-          <h1 className="text-center text-white font-black italic text-7xl">
-            WHERE NFT-FI ⛓<br />
+          <h1 className="text-center text-white font-black italic lg:text-7xl text-5xl">
+            WHERE NFT ⛓<br />
             MEETS <span className="text-primary-light glow">SCI-FI</span>
           </h1>
         </div>
-        <div className="mt-24">
-          <h2 className="text-5xl font-black italic text-primary-light glow uppercase text-center">
+        <div className="lg:mt-24 mt-10 mx-5">
+          <h2 className="lg:text-5xl text-4xl font-black italic text-primary-light glow uppercase text-center px-10">
             Let's get started
           </h2>
           <div>
-            <p className="text-center text-white font-orb font-black text-3xl uppercase mt-20">
-              💸 <br />
-              30% of
-              <br />{" "}
-              <span className="text-primary-dark">secondary royalties</span>
-              <br /> from GEN 1 CYBORG SALES
-              <br /> DIRECTLY INVESTED INTO THE COMMUNITY
-            </p>
+            <div className="hidden lg:block">
+              <p className="text-center text-white font-orb font-black lg:text-3xl text-2xl uppercase mt-20">
+                💸 <br />
+                30% of
+                <br />{" "}
+                <span className="text-primary-dark">secondary royalties</span>
+                <br /> from GEN 1 CYBORG SALES
+                <br /> DIRECTLY INVESTED INTO THE COMMUNITY
+              </p>
+              <img
+                src={RevenueShare}
+                alt="Revenue split"
+                className="mt-10 mx-auto"
+              />
+            </div>
             <img
-              src={RevenueShare}
-              alt="Revenue split"
-              className="mt-10 mx-auto"
+              src={RoyaltyBreakdwon}
+              className="block lg:hidden mx-auto mt-16"
+              alt=""
             />
-            <p className="text-center text-white font-orb font-black text-3xl uppercase mt-24">
+            <p className="text-center text-white font-orb font-black lg:text-3xl text-2xl uppercase mt-24">
               💸
               <br /> 3.5% of
               <br />{" "}
@@ -47,7 +56,7 @@ function Tokenomics(props: RouteComponentProps) {
               <br /> to{" "}
               <span className="text-primary-dark">GEN 1 CYBORG HOLDERS</span>
             </p>
-            <div className="grid grid-cols-3 font-orb font-black text-lg text-white uppercase mt-16 max-w-7xl mx-auto">
+            <div className="grid lg:grid-cols-3 grid-cols-1 gap-10 font-orb font-black text-lg text-white uppercase mt-16 max-w-7xl mx-auto">
               <div className="text-center">
                 <p>drop 1</p>
                 <p className="text-primary-dark">
@@ -70,7 +79,7 @@ function Tokenomics(props: RouteComponentProps) {
                 </p>
               </div>
             </div>
-            <p className="text-center mt-36 text-white font-orb font-black text-3xl uppercase mx-auto max-w-5xl">
+            <p className="text-center mt-36 text-white font-orb font-black lg:text-3xl text-2xl uppercase mx-auto max-w-5xl">
               💸
               <br /> 0.5% of
               <br /> <span className="text-primary-dark">taKE RATE</span> FROM
@@ -88,21 +97,30 @@ function Tokenomics(props: RouteComponentProps) {
               </span>
             </p>
             <div className="mt-44">
-              <h3 className="text-5xl font-black italic text-primary-light glow uppercase ml-40">
+              <h3 className="lg:text-5xl text-4xl text-center lg:text-left font-black italic text-primary-light glow uppercase lg:ml-40">
                 Summary
               </h3>
-              <img src={Summary} alt="Summary" className="-mt-10 w-full" />
+              <img
+                src={Summary}
+                alt="Summary"
+                className="-mt-10 w-full hidden lg:block"
+              />
+              <img
+                src={SummaryMobile}
+                alt="Summary"
+                className="w-full block lg:hidden mt-10"
+              />
             </div>
           </div>
         </div>
       </main>
-      <div className="mt-8 font-orb ">
-        <p className="text-sm font-medium text-gray text-center font-inter">
+      <div className="mt-12 font-orb">
+        <p className="text-sm font-medium text-gray text-center font-inter mx-10">
           Can’t find an answer to your query? Don’t worry, we’ve got your
           back...
         </p>
         <div className="flex flex-wrap justify-center items-center">
-          <Link to="/roadmap" className="btn-primary font-black mt-4 mr-3">
+          <Link to="/roadmap" className="btn-primary font-black mt-4 lg:mr-3">
             ROADMAP
           </Link>
           <a
