@@ -28,19 +28,19 @@ function Roadmap(props: RouteComponentProps) {
         </h1>
         <img src={Ship} alt="Super Cool Spaceship" className="mt-10 mx-auto" />
       </div>
-      <div className="text-white mx-48 -mt-48 relative z-10">
+      <div className="text-white ml-5 mr-10 lg:mx-48 -mt-48 relative z-10">
         <div className="flex">
-          <div className="h-6 w-6 rounded-full flex-shrink-0 mt-1 mr-10 flex relative">
+          <div className="h-4 w-4 lg:h-6 lg:w-6 rounded-full flex-shrink-0 mt-1 lg:mr-10 mr-5 flex relative">
             <div className="absolute bg-primary-dark rounded-full inset-0 filter  blur-sm"></div>
-            <div className="h-4 w-4 bg-primary-light rounded-full m-auto relative z-10"></div>
+            <div className="lg:h-4 lg:w-4 h-3 w-3 bg-primary-light rounded-full m-auto relative z-10"></div>
           </div>
           <div className="w-full">
-            <h3 className="font-orb text-2xl font-medium uppercase">
+            <h3 className="font-orb lg:text-2xl text-xl font-medium uppercase">
               Q3 2021 - Force Formation
             </h3>
             <div className="mt-10 space-y-10">
               <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10">
-                <div className="flex justify-between items-baseline">
+                <div className="flex justify-between items-baseline flex-col lg:flex-row">
                   <h4 className="font-black italic uppercase text-xl">
                     Gen-1 Cyborg NFT drop (2000)
                   </h4>
@@ -59,7 +59,7 @@ function Roadmap(props: RouteComponentProps) {
                 </p>
               </div>
               <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10">
-                <div className="flex justify-between items-baseline">
+                <div className="flex justify-between items-baseline flex-col lg:flex-row">
                   <h4 className="font-black italic uppercase text-xl">
                     Gen-1 Cyborg NFT drop (8000)
                   </h4>
@@ -77,7 +77,7 @@ function Roadmap(props: RouteComponentProps) {
                 </p>
               </div>
               <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10">
-                <div className="flex justify-between items-baseline">
+                <div className="flex justify-between items-baseline flex-col lg:flex-row">
                   <h4 className="font-black italic uppercase text-xl">
                     GEN-1 SECONDARY MARKETPLACE LISTING LAUNCHED
                   </h4>
@@ -95,18 +95,18 @@ function Roadmap(props: RouteComponentProps) {
             </div>
           </div>
         </div>
-        <div className="mt-30 flex">
-          <div className="h-6 w-6 rounded-full flex-shrink-0 mt-1 mr-10 flex relative">
+        <div className="flex lg:mt-30 mt-16">
+          <div className="h-4 w-4 lg:h-6 lg:w-6 rounded-full flex-shrink-0 mt-1 lg:mr-10 mr-5 flex relative">
             <div className="absolute bg-primary-dark rounded-full inset-0 filter  blur-sm"></div>
-            <div className="h-4 w-4 bg-primary-light rounded-full m-auto relative z-10"></div>
+            <div className="h-3 w-3 lg:h-4 lg:w-4 bg-primary-light rounded-full m-auto relative z-10"></div>
           </div>
           <div>
-            <h3 className="font-orb text-2xl font-medium uppercase">
+            <h3 className="font-orb lg:text-2xl text-xl font-medium uppercase">
               Q4 2021 - SGF TRIDENT DEPLOYED
             </h3>
             <div className="mt-10 space-y-10">
               <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10">
-                <div className="flex justify-between items-baseline">
+                <div className="flex justify-between items-baseline flex-col lg:flex-row">
                   <h4 className="font-black italic uppercase text-xl">
                     SGF ECOSYSTEM FUND ROLLS OUT GRANTS PROGRAM
                   </h4>
@@ -132,7 +132,7 @@ function Roadmap(props: RouteComponentProps) {
                 </p>
               </div>
               <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10">
-                <div className="flex justify-between items-baseline">
+                <div className="flex justify-between items-baseline flex-col lg:flex-row">
                   <h4 className="font-black italic uppercase text-xl">
                     FLOOR SWEEPING 📈
                   </h4>
@@ -152,7 +152,7 @@ function Roadmap(props: RouteComponentProps) {
                 </p>
               </div>
               <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10">
-                <div className="flex justify-between items-baseline">
+                <div className="flex justify-between items-baseline flex-col lg:flex-row">
                   <h4 className="font-black italic uppercase text-xl">
                     DONATION FOR DISABLED VETERANS
                   </h4>
@@ -171,16 +171,18 @@ function Roadmap(props: RouteComponentProps) {
             </div>
           </div>
         </div>
-        <div className="mt-30  flex">
-          <div className="h-6 w-6 rounded-full flex-shrink-0 mt-1 mr-10 flex relative">
+        <div className="lg:mt-30 mt-16 flex">
+          <div className="h-4 w-4 lg:h-6 lg:w-6 rounded-full flex-shrink-0 mt-1 lg:mr-10 mr-5 flex relative">
             <div className="absolute bg-primary-dark rounded-full inset-0 filter  blur-sm"></div>
-            <div className="h-4 w-4 bg-primary-light rounded-full m-auto relative z-10"></div>
+            <div className="h-3 w-3 lg:h-4 lg:w-4 bg-primary-light rounded-full m-auto relative z-10"></div>
           </div>
           <div>
-            <h3 className="font-orb text-2xl font-medium uppercase">Q1 2022</h3>
+            <h3 className="font-orb lg:text-2xl text-xl font-medium uppercase">
+              Q1 2022
+            </h3>
             <div className="mt-10 space-y-10">
               <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10">
-                <div className="flex justify-between items-baseline">
+                <div className="flex justify-between items-baseline flex-col lg:flex-row">
                   <h4 className="font-black italic uppercase text-xl">
                     GEN-2 AR COMPATIBLE 3D CYBORGS NFT LAUNCH
                   </h4>
@@ -203,7 +205,7 @@ function Roadmap(props: RouteComponentProps) {
                 </p>
               </div>
               <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10">
-                <div className="flex justify-between items-baseline">
+                <div className="flex justify-between items-baseline flex-col lg:flex-row">
                   <h4 className="font-black italic uppercase text-xl">
                     GEN-2 3D CYBORGS MARKETPLACE LISTING
                   </h4>
@@ -217,7 +219,7 @@ function Roadmap(props: RouteComponentProps) {
                 </p>
               </div>
               <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10">
-                <div className="flex justify-between items-baseline">
+                <div className="flex justify-between items-baseline flex-col lg:flex-row">
                   <h4 className="font-black italic uppercase text-xl">
                     NEURAL FUSION OF CYBORGS NFT
                   </h4>
@@ -239,7 +241,7 @@ function Roadmap(props: RouteComponentProps) {
                 </p>
               </div>
               <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10">
-                <div className="flex justify-between items-baseline">
+                <div className="flex justify-between items-baseline flex-col lg:flex-row">
                   <h4 className="font-black italic uppercase text-xl">
                     SGF FLAGSHIP FIGHTER GAME DEMO LAUNCH
                   </h4>
@@ -264,7 +266,7 @@ function Roadmap(props: RouteComponentProps) {
           </div>
         </div>
         <div
-          className="w-1 mx-2.5 mt-2 rounded-full absolute top-0 left-0 bg-primary-light"
+          className="w-1 lg:mx-2.5 mx-1.5 mt-2 rounded-full absolute top-0 left-0 bg-primary-light"
           style={{ height: `calc(100% + 111px)` }}
         ></div>
       </div>
@@ -273,12 +275,12 @@ function Roadmap(props: RouteComponentProps) {
       </div>
 
       <div className="mt-8 font-orb ">
-        <p className="text-sm font-medium text-gray text-center font-inter">
+        <p className="text-sm font-medium text-gray text-center font-inter mx-10">
           Can’t find an answer to your query? Don’t worry, we’ve got your
           back...
         </p>
         <div className="flex flex-wrap justify-center items-center">
-          <Link to="/faq" className="btn-primary font-black mt-4 mr-3">
+          <Link to="/faq" className="btn-primary font-black mt-4 lg:mr-3">
             FAQS
           </Link>
           <a
