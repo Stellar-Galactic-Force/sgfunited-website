@@ -80,8 +80,8 @@ function Landing(props) {
           <div className="absolute bg-primary-light -inset-1 z-0 opacity-80  rounded filter blur"></div>
           <Ticker>
             {() => (
-              <div className="relative z-10 bg-primary-light py-3 lg:ml-3 font-medium text-xs">
-                LAUNCHING ON TBD SEPTEMBER * MINT PRICE 0.99 SOL *
+              <div className="relative z-10  py-3 ml-3 font-medium text-xs lg:text-lg">
+                LAUNCHING SOON @ 0.99 SOL *
               </div>
             )}
           </Ticker>
