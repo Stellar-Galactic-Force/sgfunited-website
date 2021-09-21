@@ -76,11 +76,11 @@ function FAQ(props: RouteComponentProps) {
         <h1 className="text-center text-primary-light glow text-5xl font-black italic">
           FAQS
         </h1>
-        <section className="relative -mt-10  px-52">
+        <section className="relative mt-10 lg:-mt-10  lg:px-52 px-10">
           <img
             src={CyborgEyeShadow}
             alt="Cyborg sillouhette with glow eyes"
-            className="mt-2 ml-10"
+            className="mt-2 ml-10 hidden lg:block"
           />
           <dl className="space-y-5">
             {faqs.map((faq) => (
@@ -122,15 +122,15 @@ function FAQ(props: RouteComponentProps) {
             ))}
           </dl>
         </section>
-        <div className="mt-8 font-orb ">
-          <p className="text-sm font-medium text-gray text-center font-inter">
+        <div className="mt-16 font-orb">
+          <p className="text-sm font-medium text-gray text-center font-inter mx-10">
             Can’t find an answer to your query? Don’t worry, we’ve got your
             back...
           </p>
           <div className="flex flex-wrap justify-center items-center">
             <Link
               to="/roadmap"
-              className="btn-primary font-black mt-4 mr-3 uppercase"
+              className="btn-primary font-black mt-4 lg:mr-3 uppercase"
             >
               Roadmap
             </Link>
