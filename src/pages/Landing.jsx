@@ -112,7 +112,7 @@ function Landing(props) {
         </div>
       </div>
       <div
-        className="lg:h-screen bg-center bg-cover relative  lg:pb-28 lg:pt-44 lg:pl-36 px-10 py-16"
+        className="lg:h-screen bg-center bg-cover relative  lg:pb-28 lg:pt-44 lg:pl-36 px-10 pt-20 pb-16"
         id="vision"
       >
         <div className="lg:grid lg:grid-cols-2">
@@ -161,7 +161,7 @@ function Landing(props) {
         </div>
       </div>
       <div
-        className="lg:h-screen bg-center bg-cover lg:pt-40 px-10 py-16 relative"
+        className="lg:h-screen bg-center bg-cover lg:pt-40 px-10  pt-36 pb-16 relative"
         id="team"
       >
         <div className="bg-black bg-opacity-40 h-full absolute inset-0 z-0"></div>

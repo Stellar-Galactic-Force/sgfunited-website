@@ -59,7 +59,7 @@ function NFT(props: RouteComponentProps) {
     >
       <Nav />
       <div
-        className=" text-white w-full lg:h-screen lg:px-30 lg:py-40  px-10  py-16 relative bg-center bg-cover lg:grid lg:grid-cols-2"
+        className=" text-white w-full lg:h-screen lg:px-30 lg:py-40 px-10 pt-32 pb-16 relative bg-center bg-cover lg:grid lg:grid-cols-2"
         id="nft-drop-hero"
       >
         <div className="flex flex-col items-start justify-center">
