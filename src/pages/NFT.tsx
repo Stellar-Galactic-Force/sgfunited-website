@@ -2,7 +2,7 @@ import { Link, RouteComponentProps } from "@reach/router";
 
 import Nav from "../components/Nav";
 
-import HeroCyborg from "../assets/nft/cyborgs.gif";
+import HeroCyborg from "../assets/nft/hero-cyborg.gif";
 import Cyborgs from "../assets/nft/cyborgs.svg";
 import General from "../assets/nft/general.png";
 import Lieutenant from "../assets/nft/lieutenant.png";
