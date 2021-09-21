@@ -50,7 +50,7 @@ function NFT(props: RouteComponentProps) {
 
     cyborgGif.current?.classList.remove("lg:translate-x-8");
     cyborgGif.current?.classList.remove("opacity-0");
-    cyborgGif.current?.classList.remove("scale-75");
+    cyborgGif.current?.classList.remove("scale-90");
   }, []);
   return (
     <div
@@ -94,7 +94,7 @@ function NFT(props: RouteComponentProps) {
         </div>
         <div className="grid items-center justify-center mt-10">
           <div
-            className="border-primary-light rounded-md lg:border-8 border-4 lg:w-1/2 mx-auto transition-all  transform duration-500 ease-out opacity-0 lg:translate-x-8 scale-75"
+            className="border-primary-light rounded-md lg:border-8 border-4 lg:w-11/12 mx-auto transition-all  transform duration-500 ease-out opacity-0 lg:translate-x-8 scale-90"
             ref={cyborgGif}
           >
             <img src={HeroCyborg} alt="Cyborg hero" />
