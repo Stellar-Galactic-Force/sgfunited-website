@@ -48,19 +48,22 @@ function Landing(props) {
         className="bg-black text-white w-full h-screen flex items-center px-10 py-14 lg:px-30 lg:py-40 relative"
       >
         <div className="max-w-5xl">
-          <h1
-            className="lg:text-7xl text-4xl t font-black italic transform transition-all opacity-0 -translate-x-6 duration-900 ease-out"
-            ref={headingRef}
-          >
-            1st COMMUNITY-OWNED{" "}
-            <span
-              className="text-primary-light relative delay-700 duration-500"
-              ref={headGlow}
+          <div className="relative">
+            <div className="bg-black opacity-25 absolute inset-0 filter blur lg:hidden"></div>
+            <h1
+              className="lg:text-7xl text-4xl font-black italic transform transition-all opacity-0 -translate-x-6 duration-900 ease-out"
+              ref={headingRef}
             >
-              SCI-FI MEDIA HOUSE{" "}
-            </span>{" "}
-            🔭 BUILT ON SOLANA
-          </h1>
+              1st COMMUNITY-OWNED{" "}
+              <span
+                className="text-primary-light relative delay-700 duration-500"
+                ref={headGlow}
+              >
+                SCI-FI MEDIA HOUSE{" "}
+              </span>{" "}
+              🔭 BUILT ON SOLANA
+            </h1>
+          </div>
 
           <div className="mt-10 lg:space-x-5  space-y-4  lg:space-y-0 font-orb  mx-auto">
             <Link to="/nft" className="btn-primary font-black">
