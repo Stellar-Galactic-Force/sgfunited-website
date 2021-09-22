@@ -4,6 +4,7 @@ import Nav from "../components/Nav";
 
 import Ship from "../assets/roadmap/ship.png";
 import RoadmapImage from "../assets/roadmap/roadmap.svg";
+import useScrollToTop from "../lib/useScrollToTop";
 
 function Roadmap(props: RouteComponentProps) {
   const headingRef = useRef<HTMLHeadingElement>(null);
@@ -14,6 +15,8 @@ function Roadmap(props: RouteComponentProps) {
 
     headingSpan.current?.classList.add("glow");
   }, []);
+
+  useScrollToTop();
   return (
     <div style={{ background: "#101010" }} className="pb-30">
       <Nav />

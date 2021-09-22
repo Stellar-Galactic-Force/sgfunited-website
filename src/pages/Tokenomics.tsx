@@ -6,6 +6,7 @@ import RoyaltyBreakdwon from "../assets/tokenomics/royalty-breakdown-mobile.svg"
 import Summary from "../assets/tokenomics/summary-illustration.svg";
 import SummaryMobile from "../assets/tokenomics/summary-mobile.svg";
 import { useEffect, useRef } from "react";
+import useScrollToTop from "../lib/useScrollToTop";
 
 function Tokenomics(props: RouteComponentProps) {
   const headingRef = useRef<HTMLHeadingElement>(null);
@@ -13,6 +14,8 @@ function Tokenomics(props: RouteComponentProps) {
   useEffect(() => {
     headingRef.current?.classList.remove("opacity-0");
   }, []);
+
+  useScrollToTop();
   return (
     <div className="min-h-screen pb-30" style={{ background: "#101010" }}>
       <Nav />

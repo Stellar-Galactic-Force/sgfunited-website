@@ -37,6 +37,7 @@ import Satelite from "../assets/nft/decorative/satelite.svg";
 import StoneGrey from "../assets/nft/decorative/stone-grey.svg";
 import WhiteSpaceship from "../assets/nft/decorative/white-spaceship.png";
 import { useEffect, useRef } from "react";
+import useScrollToTop from "../lib/useScrollToTop";
 
 function NFT(props: RouteComponentProps) {
   const headingRef = useRef<HTMLHeadingElement>(null);
@@ -52,6 +53,9 @@ function NFT(props: RouteComponentProps) {
     cyborgGif.current?.classList.remove("opacity-0");
     cyborgGif.current?.classList.remove("scale-90");
   }, []);
+
+  useScrollToTop();
+
   return (
     <div
       className="relative pb-20 overflow-x-hidden"

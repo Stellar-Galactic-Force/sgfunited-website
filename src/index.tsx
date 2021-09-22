@@ -14,7 +14,7 @@ ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
     <div className="font-inter">
-      <Router>
+      <Router primary={false}>
         <Landing path="/" />
         <NFT path="nft" />
         <Roadmap path="roadmap" />

@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useLayoutEffect } from "react";
 
 import GLOBE from "vanta/dist/vanta.globe.min";
 import Ticker from "react-ticker";
@@ -8,6 +8,7 @@ import Nav from "../components/Nav";
 
 import Spaceship from "../assets/landing/spaceship.svg";
 import Avatar from "../assets/landing/team-avatar.png";
+import useScrollToTop from "../lib/useScrollToTop";
 
 function Landing(props) {
   const [effect, setEffect] = useState(null);
@@ -39,6 +40,8 @@ function Landing(props) {
       if (effect) effect.destroy();
     };
   }, [effect]);
+
+  useScrollToTop();
 
   return (
     <div className="relative overflow-x-hidden">

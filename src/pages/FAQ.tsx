@@ -4,6 +4,7 @@ import { Disclosure } from "@headlessui/react";
 
 import Nav from "../components/Nav";
 import CyborgEyeShadow from "../assets/faq/cyborg-eye-shadow.png";
+import useScrollToTop from "../lib/useScrollToTop";
 
 function FAQ(props: RouteComponentProps) {
   const faqs = [
@@ -74,6 +75,8 @@ function FAQ(props: RouteComponentProps) {
   useEffect(() => {
     headingRef.current?.classList.remove("opacity-0");
   }, []);
+
+  useScrollToTop();
 
   return (
     <div style={{ background: "#101010" }} className="min-h-screen">
