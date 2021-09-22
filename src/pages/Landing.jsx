@@ -1,8 +1,9 @@
-import { useState, useEffect, useRef, useLayoutEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 import GLOBE from "vanta/dist/vanta.globe.min";
 import Ticker from "react-ticker";
 import { Link } from "@reach/router";
+import { isMobile } from "react-device-detect";
 
 import Nav from "../components/Nav";
 
@@ -21,20 +22,22 @@ function Landing(props) {
     headingRef.current.classList.remove("-translate-x-6");
     headGlow.current.classList.add("heading-glow");
     if (!effect) {
-      setEffect(
-        GLOBE({
-          el: effectRef.current,
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: true,
-          scale: 1,
-          scaleMobile: 1.0,
-          size: 0.65,
-          color: 0xadf9ff,
-          color2: 0xadf9ff,
-          backgroundColor: 0x000,
-        })
-      );
+      if (!isMobile) {
+        setEffect(
+          GLOBE({
+            el: effectRef.current,
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: true,
+            scale: 1,
+            scaleMobile: 1.0,
+            size: 0.65,
+            color: 0xadf9ff,
+            color2: 0xadf9ff,
+            backgroundColor: 0x000,
+          })
+        );
+      }
     }
     return () => {
       if (effect) effect.destroy();
