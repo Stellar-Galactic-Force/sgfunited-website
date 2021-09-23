@@ -4,6 +4,11 @@ import Nav from "../components/Nav";
 
 import Ship from "../assets/roadmap/ship.png";
 import RoadmapImage from "../assets/roadmap/roadmap.svg";
+
+import LogoImage from "../assets/common/Logo.svg";
+import Discord from "../assets/icons/discord.svg";
+import Twitter from "../assets/icons/twitter.svg";
+
 import useScrollToTop from "../lib/useScrollToTop";
 
 function Roadmap(props: RouteComponentProps) {
@@ -18,7 +23,7 @@ function Roadmap(props: RouteComponentProps) {
 
   useScrollToTop();
   return (
-    <div style={{ background: "#101010" }} className="pb-30">
+    <div style={{ background: "#101010" }}>
       <Nav />
       <div
         id="roadmap-hero"
@@ -283,25 +288,52 @@ function Roadmap(props: RouteComponentProps) {
         <img src={RoadmapImage} alt="roadmap" className="w-full" />
       </div>
 
-      <div className="mt-8 font-orb ">
-        <p className="text-sm font-medium text-gray text-center font-inter mx-10">
-          Can’t find an answer to your query? Don’t worry, we’ve got your
-          back...
-        </p>
-        <div className="flex flex-wrap justify-center items-center">
-          <Link to="/faq" className="btn-primary font-black mt-4 lg:mr-3">
-            FAQS
-          </Link>
-          <a
-            href="https://discord.com/invite/bBeHKHHSu5"
-            target="_blank"
-            rel="noreferrer"
-            className="btn-secondary font-black mt-4"
-          >
-            JOIN DISCORD
-          </a>
+      <footer className="flex flex-col lg:flex-row justify-between items-center lg:px-24 py-16 px-10 text-white bg-center bg-cover mt-10">
+        <div>
+          <img src={LogoImage} alt="Logo" />
+          <p className="mt-5 font-orb text-xs hidden lg:block">
+            {"</>"} with 🦾 on Solana
+          </p>
+          <div className="flex space-x-5 text-2xl mt-5 justify-center lg:justify-start">
+            <a
+              href="https://discord.com/invite/bBeHKHHSu5"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={Discord} alt="discord-icon" />
+            </a>
+            <a
+              href="https://twitter.com/SGFUnited"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={Twitter} alt="twitter-icon" />
+            </a>
+          </div>
         </div>
-      </div>
+        <div className="font-orb flex flex-col items-center mx-auto lg:mx-0 mt-10 lg:mt-0 lg:max-w-xs">
+          <p className="text-sm font-medium text-gray text-center font-inter">
+            Ready for an On-chain Decentralised Galactic Adventure? Come join
+            the SGF Community, where Sci-Fi meets NFTs.
+          </p>
+          <div className="flex flex-wrap justify-end items-center">
+            <Link
+              to="/tokenomics"
+              className="footer-btn-primary font-black mt-4 lg:mr-3 w-full lg:w-auto"
+            >
+              TOKENOMICS
+            </Link>
+            <a
+              href="https://discord.com/invite/bBeHKHHSu5"
+              target="_blank"
+              rel="noreferrer"
+              className="footer-btn-secondary font-black mt-4 w-full lg:w-auto"
+            >
+              JOIN DISCORD
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
