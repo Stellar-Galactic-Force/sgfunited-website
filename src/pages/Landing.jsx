@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 
 import GLOBE from "vanta/dist/vanta.globe.min";
-import Ticker from "react-ticker";
+import Marquee from "react-fast-marquee";
 import { Link } from "@reach/router";
 import { isMobile } from "react-device-detect";
 
@@ -95,9 +95,30 @@ function Landing(props) {
             </a>
           </div>
         </div>
-        <div className="absolute bottom-0 inset-x-0 bg-primary-light text-black font-orb">
+        <div className="absolute bottom-0 inset-x-0 bg-primary-light text-black italic uppercase font-black tracking-wide">
           <div className="absolute bg-primary-light -inset-1 z-0 opacity-80  rounded filter blur"></div>
-          <Ticker>
+          <Marquee
+            speed={isMobile ? 30 : 75}
+            gradient={false}
+            pauseOnHover={true}
+            pauseOnClick={true}
+          >
+            <div className="relative z-10  space-x-2  py-3 font-medium text-xs lg:text-lg">
+              <span>Sale 1: Supply 2k • Mint Price 0.42069 SOL *</span>
+              <span className="underline">
+                <a
+                  href="https://discord.com/invite/bBeHKHHSu5"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  JOIN DISCORD
+                </a>
+              </span>
+              <span>* SALE 2: Supply 8k • Mint Price 0.99 SOL *</span>
+            </div>
+          </Marquee>
+
+          {/* <Ticker>
             {() => (
               <>
                 <div className="relative z-10  py-3 ml-3 font-medium text-xs lg:text-lg">
@@ -108,7 +129,7 @@ function Landing(props) {
                 </div>
               </>
             )}
-          </Ticker>
+          </Ticker> */}
         </div>
       </div>
       <div
