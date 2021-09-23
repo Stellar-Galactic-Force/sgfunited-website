@@ -7,8 +7,14 @@ import { isMobile } from "react-device-detect";
 
 import Nav from "../components/Nav";
 
-import Spaceship from "../assets/landing/spaceship.svg";
-import Avatar from "../assets/landing/team-avatar.png";
+import Spaceship from "../assets/landing/Spaceship.svg";
+
+import Alphatron from "../assets/landing/Team-Avatars/alphatron.svg";
+import NonFungiblePrime from "../assets/landing/Team-Avatars/nonfungibleprime.svg";
+import Kayden from "../assets/landing/Team-Avatars/kayden.svg";
+import Greywolf from "../assets/landing/Team-Avatars/greywolf.svg";
+import Skywalker from "../assets/landing/Team-Avatars/skywalker.svg";
+
 import useScrollToTop from "../lib/useScrollToTop";
 
 function Landing(props) {
@@ -121,7 +127,7 @@ function Landing(props) {
         </div>
       </div>
       <div
-        className="lg:h-screen bg-center bg-cover relative  lg:pb-28 lg:pt-44 lg:pl-36 px-10 pt-20 pb-16"
+        className="lg:h-screen bg-center bg-cover relative  lg:pb-28 lg:pt-44 lg:pl-36 lg:pr-0 px-10 pt-20 pb-16"
         id="vision"
       >
         <div className="lg:grid lg:grid-cols-2">
@@ -147,8 +153,7 @@ function Landing(props) {
         </div>
         <div>
           <p className="mt-10 text-white lg:text-3xl text-2xl font-orb uppercase font-black">
-            Intellectual property DROPs planned:
-            <br />
+            Intellectual property DROPs planned: <br />
             <span className="text-primary-dark glow">
               GENSIS 10k Gen-1 CYBORG
             </span>
@@ -170,7 +175,7 @@ function Landing(props) {
         </div>
       </div>
       <div
-        className="lg:h-screen bg-center bg-cover lg:pt-40 px-10  pt-36 pb-16 relative"
+        className="lg:h-screen bg-center bg-cover lg:pt-40 px-10  pt-36 pb-16 relative bg-black"
         id="team"
       >
         <div className="bg-black bg-opacity-40 h-full absolute inset-0 z-0"></div>
@@ -179,27 +184,27 @@ function Landing(props) {
             Stellar team
           </h1>
           <div className="max-w-4xl mx-auto hidden lg:block">
-            <div className="grid grid-cols-3 font-orb text-white mt-20">
+            <div className="font-orb text-white mt-20 flex justify-between">
               <div className="space-y-2">
-                <img src={Avatar} alt="" className="mx-auto" />
+                <img src={Kayden} alt="" className="mx-auto" />
                 <p className="text-center">@kayden</p>
               </div>
               <div className="space-y-2">
-                <img src={Avatar} alt="" className="mx-auto" />
+                <img src={NonFungiblePrime} alt="" className="mx-auto" />
                 <p className="text-center">@nonfungibleprime</p>
               </div>
               <div className="space-y-2">
-                <img src={Avatar} alt="" className="mx-auto" />
+                <img src={Greywolf} alt="" className="mx-auto" />
                 <p className="text-center">@greywolf</p>
               </div>
             </div>
-            <div className="grid grid-cols-2 font-orb text-white mt-16">
+            <div className="font-orb text-white mt-16 flex justify-evenly">
               <div className="space-y-2">
-                <img src={Avatar} alt="" className="mx-auto" />
+                <img src={Alphatron} alt="" className="mx-auto" />
                 <p className="text-center">@alphatron</p>
               </div>
               <div className="space-y-2">
-                <img src={Avatar} alt="" className="mx-auto" />
+                <img src={Skywalker} alt="" className="mx-auto" />
                 <p className="text-center">@skywalker</p>
               </div>
             </div>
@@ -208,7 +213,7 @@ function Landing(props) {
             <div className="grid grid-cols-2 font-orb text-white mt-10 gap-5">
               <div className="space-y-2">
                 <img
-                  src={Avatar}
+                  src={Kayden}
                   alt=""
                   className="mx-auto w-30 h-30 lg:w-auto lg:h-auto"
                 />
@@ -216,15 +221,17 @@ function Landing(props) {
               </div>
               <div className="space-y-2">
                 <img
-                  src={Avatar}
+                  src={NonFungiblePrime}
                   alt=""
                   className="mx-auto w-30 h-30 lg:w-auto lg:h-auto"
                 />
-                <p className="text-center">@nonfungibleprime</p>
+                <p className="text-center  whitespace-nowrap truncate">
+                  @nonfungibleprime
+                </p>
               </div>
               <div className="space-y-2">
                 <img
-                  src={Avatar}
+                  src={Greywolf}
                   alt=""
                   className="mx-auto w-30 h-30 lg:w-auto lg:h-auto"
                 />
@@ -232,7 +239,7 @@ function Landing(props) {
               </div>
               <div className="space-y-2">
                 <img
-                  src={Avatar}
+                  src={Alphatron}
                   alt=""
                   className="mx-auto w-30 h-30 lg:w-auto lg:h-auto"
                 />
@@ -242,7 +249,7 @@ function Landing(props) {
 
             <div className="space-y-2 mt-5 font-orb">
               <img
-                src={Avatar}
+                src={Skywalker}
                 alt=""
                 className="mx-auto w-30 h-30 lg:w-auto lg:h-auto"
               />

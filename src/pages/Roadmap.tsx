@@ -50,9 +50,10 @@ function Roadmap(props: RouteComponentProps) {
                   <h4 className="font-black italic uppercase text-xl">
                     Gen-1 Cyborg NFT drop (2000)
                   </h4>
-                  <div className="flex space-x-3 text-sm">
-                    <p>Mint: X</p>
-                    <p>Date: TBD</p>
+                  <div className="flex flex-wrap text-sm">
+                    <p className="mr-3">Mint: 0.42069 SOL</p>
+                    <p className="mr-3">Supply: 2k</p>
+                    <p className="mr-3">Date: TBD</p>
                   </div>
                 </div>
                 <p className="text-lg mt-5 font-medium text-gray">
@@ -69,8 +70,10 @@ function Roadmap(props: RouteComponentProps) {
                   <h4 className="font-black italic uppercase text-xl">
                     Gen-1 Cyborg NFT drop (8000)
                   </h4>
-                  <div className="text-sm">
-                    <p>Date: TBD</p>
+                  <div className="flex flex-wrap text-sm">
+                    <p className="mr-3">Mint: 0.99 SOL</p>
+                    <p className="mr-3">Supply: 8k</p>
+                    <p className="mr-3">Date: TBD</p>
                   </div>
                 </div>
                 <p className="text-lg mt-5 font-medium text-gray">

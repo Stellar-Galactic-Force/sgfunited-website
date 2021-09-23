@@ -8,8 +8,10 @@ import General from "../assets/nft/general.png";
 import Lieutenant from "../assets/nft/lieutenant.png";
 import Soldier from "../assets/nft/soldier.png";
 import CyborgBreakdown from "../assets/nft/cyborg-breakdown.svg";
+import CyborgBreakdownMobile from "../assets/nft/cyborg-breakdown-mobile.svg";
 
 import Mercury from "../assets/nft/bg/mercury-bg.png";
+import Venus from "../assets/nft/bg/venus-bg.svg";
 import Earth from "../assets/nft/bg/earth-bg.png";
 import Mars from "../assets/nft/bg/mars-bg.png";
 import Jupiter from "../assets/nft/bg/jupiter-bg.png";
@@ -28,7 +30,6 @@ import BrawlerMobile from "../assets/nft/cyborg-mobile/brawler-mobile.svg";
 import MarineMobile from "../assets/nft/cyborg-mobile/marine-mobile.svg";
 import WarriorMobile from "../assets/nft/cyborg-mobile/warrior-mobile.svg";
 import TacticianMobile from "../assets/nft/cyborg-mobile/tactician-mobile.svg";
-import CyborgBreakdownMobile from "../assets/nft/cyborg-mobile/cyborg-breakdown-mobile.svg";
 
 import PlanetBrown from "../assets/nft/decorative/planet-brown.svg";
 import Meteor from "../assets/nft/decorative/meteor.svg";
@@ -127,29 +128,61 @@ function NFT(props: RouteComponentProps) {
         <h1 className="lg:text-5xl text-4xl text-primary-light glow font-black italic text-center">
           mint details
         </h1>
-        <div className="grid lg:grid-cols-3 grid-cols-1 gap-5 text-white font-orb font-black text-center mt-16">
-          <div className="grid grid-rows-2 lg:space-y-5 space-y-2">
-            <div className="lg:text-5xl text-3xl whitespace-nowrap truncate">
-              10,000
+        <div className="text-white font-orb font-black text-center mt-16 bg-gray-dark border border-gray-light rounded-md py-10 px-16">
+          <h4 className="uppercase text-primary-dark font-orb font-black text-3xl mb-10">
+            Sale 1
+          </h4>
+          <div className="grid lg:grid-cols-3 grid-cols-1 gap-5 w-full">
+            <div className="grid grid-rows-2 lg:space-y-5 space-y-2">
+              <div className="text-3xl whitespace-nowrap truncate font-inter italic">
+                2,000
+              </div>
+              <div className="text-lg whitespace-nowrap truncate">supply</div>
             </div>
-            <div className="lg:text-3xl text-2xl whitespace-nowrap truncate">
-              gen-1 cyborgs
+            <div className="grid grid-rows-2 lg:space-y-5 space-y-2">
+              <div className="text-3xl whitespace-nowrap truncate font-inter italic">
+                0.42690 SOL
+              </div>
+              <div className="text-lg whitespace-nowrap truncate">
+                mint price
+              </div>
+            </div>
+            <div className="grid grid-rows-2 lg:space-y-5 space-y-2">
+              <div className="text-3xl whitespace-nowrap truncate font-inter italic">
+                TBD
+              </div>
+              <div className="text-lg whitespace-nowrap truncate">
+                mint date
+              </div>
             </div>
           </div>
-          <div className="grid grid-rows-2 lg:space-y-5 space-y-2">
-            <div className="lg:text-5xl text-3xl whitespace-nowrap truncate">
-              0.99 SOL
+        </div>
+        <div className="text-white font-orb font-black text-center mt-16 bg-gray-dark border border-gray-light rounded-md py-10 px-16">
+          <h4 className="uppercase text-primary-dark font-orb font-black text-3xl mb-10">
+            Sale 2
+          </h4>
+          <div className="grid lg:grid-cols-3 grid-cols-1 gap-5 w-full">
+            <div className="grid grid-rows-2 lg:space-y-5 space-y-2">
+              <div className="text-3xl whitespace-nowrap truncate font-inter italic">
+                8,000
+              </div>
+              <div className="text-lg whitespace-nowrap truncate">supply</div>
             </div>
-            <div className="lg:text-3xl text-2xl whitespace-nowrap truncate">
-              mint price
+            <div className="grid grid-rows-2 lg:space-y-5 space-y-2">
+              <div className="text-3xl whitespace-nowrap truncate font-inter italic">
+                0.99 SOL
+              </div>
+              <div className="text-lg whitespace-nowrap truncate">
+                mint price
+              </div>
             </div>
-          </div>
-          <div className="grid grid-rows-2 lg:space-y-5 space-y-2">
-            <div className="lg:text-5xl text-3xl whitespace-nowrap truncate">
-              TBD
-            </div>
-            <div className="lg:text-3xl text-2xl whitespace-nowrap truncate">
-              mint date
+            <div className="grid grid-rows-2 lg:space-y-5 space-y-2">
+              <div className="text-3xl whitespace-nowrap truncate font-inter italic">
+                TBD
+              </div>
+              <div className="text-lg whitespace-nowrap truncate">
+                mint date
+              </div>
             </div>
           </div>
         </div>
@@ -195,7 +228,7 @@ function NFT(props: RouteComponentProps) {
               <div className="flex items-center justify-center">
                 <img src={General} alt="" />
               </div>
-              <div className="lg:mt-3 lg:text-3xl text-2xl">
+              <div className="lg:mt-3 lg:text-3xl text-2xl font-inter font-black italic">
                 <p>General</p>
               </div>
               <div className="text-lg mt-1">
@@ -209,7 +242,7 @@ function NFT(props: RouteComponentProps) {
               <div className="flex items-center justify-center">
                 <img src={Lieutenant} alt="" />
               </div>
-              <div className="lg:mt-3 lg:text-3xl text-2xl">
+              <div className="lg:mt-3 lg:text-3xl text-2xl font-inter font-black italic">
                 <p>LIEUTENANT </p>
               </div>
               <div className="text-lg mt-1">
@@ -223,7 +256,7 @@ function NFT(props: RouteComponentProps) {
               <div className="flex items-center justify-center">
                 <img src={Soldier} alt="" />
               </div>
-              <div className="lg:mt-3 lg:text-3xl text-2xl">
+              <div className="lg:mt-3 lg:text-3xl text-2xl font-inter font-black italic">
                 <p>Soldier</p>
               </div>
               <div className="text-lg mt-1">
@@ -266,68 +299,38 @@ function NFT(props: RouteComponentProps) {
             lastly <span className="text-primary-dark">bg</span> reflects
             cybgorg's space base posting
           </h1>
-          <div className="mt-16 grid-cols-4 gap-14 text-lg font-medium max-w-6xl mx-auto hidden lg:grid">
+          <div className="mt-16 lg:grid-cols-4 grid-cols-2 gap-10 lg:gap-14 text-lg font-medium max-w-6xl mx-auto grid">
             <div>
               <img src={Mercury} alt="" className="mx-auto" />
-              <p className="mt-5">mercury</p>
+              <p className="mt-5">mercurian</p>
+            </div>
+            <div>
+              <img src={Venus} alt="" className="mx-auto" />
+              <p className="mt-5">Venusian</p>
             </div>
             <div>
               <img src={Earth} alt="" className="mx-auto" />
-              <p className="mt-5">Earth</p>
+              <p className="mt-5">Earthian</p>
             </div>
             <div>
               <img src={Mars} alt="" className="mx-auto" />
-              <p className="mt-5">Mars</p>
+              <p className="mt-5">Martian</p>
             </div>
             <div>
               <img src={Jupiter} alt="" className="mx-auto" />
-              <p className="mt-5">Jupiter</p>
+              <p className="mt-5">Jovian</p>
             </div>
-          </div>
-          <div className="mt-10 hidden lg:grid grid-cols-3 gap-14 text-lg font-medium max-w-3xl mx-auto">
             <div>
               <img src={Saturn} alt="" className="mx-auto" />
-              <p className="mt-5">Saturn</p>
+              <p className="mt-5">Saturnian</p>
             </div>
             <div>
               <img src={Uranus} alt="" className="mx-auto" />
-              <p className="mt-5">Uranus</p>
+              <p className="mt-5">Uranian</p>
             </div>
             <div>
               <img src={Neptune} alt="" className="mx-auto" />
-              <p className="mt-5">Neptune</p>
-            </div>
-          </div>
-          <div className="lg:hidden block">
-            <div className="mt-16 gap-5 grid grid-cols-2">
-              <div>
-                <img src={Mercury} alt="" className="mx-auto" />
-                <p className="mt-5">mercury</p>
-              </div>
-              <div>
-                <img src={Earth} alt="" className="mx-auto" />
-                <p className="mt-5">Earth</p>
-              </div>
-              <div>
-                <img src={Mars} alt="" className="mx-auto" />
-                <p className="mt-5">Mars</p>
-              </div>
-              <div>
-                <img src={Jupiter} alt="" className="mx-auto" />
-                <p className="mt-5">Jupiter</p>
-              </div>
-              <div>
-                <img src={Saturn} alt="" className="mx-auto" />
-                <p className="mt-5">Saturn</p>
-              </div>
-              <div>
-                <img src={Uranus} alt="" className="mx-auto" />
-                <p className="mt-5">Uranus</p>
-              </div>
-            </div>
-            <div className="mt-10">
-              <img src={Neptune} alt="" className="mx-auto" />
-              <p className="mt-5">Neptune</p>
+              <p className="mt-5">Neptunian</p>
             </div>
           </div>
         </div>
@@ -363,9 +366,10 @@ function NFT(props: RouteComponentProps) {
         </div>
         <div className="mt-16">
           <div className="bg-gray-dark border border-gray-light rounded-md w-full grid grid-cols-3 gap-5 p-10 pb-0">
-            <div className="text-white font-orb font-medium space-y-5 text-xl">
-              <p>IMAGINE HULK’S POWER DIALLED UP BY 10</p>
-              <p>YOU BETTER NOT GET INTO A CAGE FIGHT WITH THEM.</p>
+            <div>
+              <p className="uppercase font-black italic text-2xl text-warriors text-left tracking-wide">
+                warriors
+              </p>
             </div>
             <div className="flex justify-center items-center">
               <img
@@ -374,10 +378,9 @@ function NFT(props: RouteComponentProps) {
                 className="mt-auto w-4/5"
               />
             </div>
-            <div>
-              <p className="uppercase font-black italic text-2xl text-warriors text-right tracking-wide">
-                warriors
-              </p>
+            <div className="text-white text-right font-orb font-medium space-y-5 text-xl">
+              <p>IMAGINE HULK’S POWER DIALLED UP BY 10</p>
+              <p>YOU BETTER NOT GET INTO A CAGE FIGHT WITH THEM.</p>
             </div>
           </div>
         </div>
@@ -405,10 +408,12 @@ function NFT(props: RouteComponentProps) {
         </div>
         <div className="mt-16">
           <div className="bg-gray-dark border border-gray-light rounded-md w-full grid grid-cols-3 gap-5 p-10 pb-0">
-            <div className="text-white font-orb font-medium space-y-5 text-xl">
-              <p>GALACTIC SCALE WAR REQUIRES GALACTIC LEVEL FORCE.</p>
-              <p>YOU CALL THEM WHEN SHIT HAS REALLY HIT THE FAN.</p>
+            <div>
+              <p className="uppercase font-black italic text-2xl text-brawlers text-left tracking-wide">
+                brawlers
+              </p>
             </div>
+
             <div className="flex justify-center items-center">
               <img
                 src={Brawler}
@@ -416,10 +421,9 @@ function NFT(props: RouteComponentProps) {
                 className="mt-auto w-4/5"
               />
             </div>
-            <div>
-              <p className="uppercase font-black italic text-2xl text-brawlers text-right tracking-wide">
-                brawlers
-              </p>
+            <div className="text-white font-orb font-medium space-y-5 text-xl text-right">
+              <p>GALACTIC SCALE WAR REQUIRES GALACTIC LEVEL FORCE.</p>
+              <p>YOU CALL THEM WHEN SHIT HAS REALLY HIT THE FAN.</p>
             </div>
           </div>
         </div>

@@ -45,15 +45,11 @@
 }
 
 #landing-section-2 {
-  background-image: url("../assets/landing/ship-background.svg");
+  background-image: url("../assets/landing/landing-2-bg.png");
 }
 
 #vision {
   background-image: url("../assets/common/stars-bg.png");
-}
-
-#team {
-  background-image: url("../assets/landing/planet-bg.png");
 }
 
 #nft-drop-hero {
