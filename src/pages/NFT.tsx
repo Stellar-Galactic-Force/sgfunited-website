@@ -146,7 +146,7 @@ function NFT(props: RouteComponentProps) {
             </div>
             <div className="grid grid-rows-2 lg:space-y-5 space-y-2">
               <div className="text-3xl whitespace-nowrap truncate font-inter italic">
-                0.42690 SOL
+                0.42069 SOL
               </div>
               <div className="text-lg whitespace-nowrap truncate">
                 mint price
