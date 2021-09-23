@@ -7,7 +7,7 @@ import { isMobile } from "react-device-detect";
 
 import Nav from "../components/Nav";
 
-import Spaceship from "../assets/landing/Spaceship.svg";
+import Spaceship from "../assets/landing/spaceship.svg";
 
 import Alphatron from "../assets/landing/Team-Avatars/alphatron.svg";
 import NonFungiblePrime from "../assets/landing/Team-Avatars/nonfungibleprime.svg";
