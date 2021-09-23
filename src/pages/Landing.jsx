@@ -99,9 +99,14 @@ function Landing(props) {
           <div className="absolute bg-primary-light -inset-1 z-0 opacity-80  rounded filter blur"></div>
           <Ticker>
             {() => (
-              <div className="relative z-10  py-3 ml-3 font-medium text-xs lg:text-lg">
-                LAUNCHING SOON @ 0.99 SOL *
-              </div>
+              <>
+                <div className="relative z-10  py-3 ml-3 font-medium text-xs lg:text-lg">
+                  <span className="font-black">SALE 1</span>: SUPPLY 2K • MINT
+                  PRICE 0.42069 SOL *{" "}
+                  <span className="font-black">SALE 2:</span> SUPPLY 8K • MINT
+                  PRICE 0.99 SOL *
+                </div>
+              </>
             )}
           </Ticker>
         </div>
