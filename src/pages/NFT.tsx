@@ -192,7 +192,7 @@ function NFT(props: RouteComponentProps) {
           </div>
         </div>
       </div>
-      <div className="py-14 px-10 mt-24 relative">
+      <div className="py-14 px-10 lg:px-0 mt-24 relative">
         <img
           src={StoneGrey}
           alt="StoneGrey"
@@ -248,7 +248,7 @@ function NFT(props: RouteComponentProps) {
                 <img src={Lieutenant} alt="" />
               </div>
               <div className="lg:mt-3 lg:text-3xl text-2xl font-inter font-black italic">
-                <p>LIEUTENANT </p>
+                <p>OFFICER </p>
               </div>
               <div className="text-lg mt-1">
                 <p>scale the impact</p>
