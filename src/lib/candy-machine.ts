@@ -1,5 +1,5 @@
 import * as anchor from "@project-serum/anchor";
-import { Keypair, LAMPORTS_PER_SOL } from '@solana/web3.js';
+import { LAMPORTS_PER_SOL } from '@solana/web3.js';
 import {
   MintLayout,
   TOKEN_PROGRAM_ID,
