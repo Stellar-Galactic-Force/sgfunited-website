@@ -1,9 +1,10 @@
 module.exports = {
-  purge: [],
+  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       spacing: {
+        1.5: "6px",
         30: "120px",
       },
       colors: {
@@ -21,6 +22,11 @@ module.exports = {
       fontFamily: {
         inter: "'Inter', sans-serif",
         orb: "'Orbitron', sans-serif",
+      },
+      transitionDuration: {
+        900: "900ms",
+
+        400: "400ms",
       },
     },
   },

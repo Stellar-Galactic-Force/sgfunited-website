@@ -1,42 +1,64 @@
-import React from "react";
-import { RouteComponentProps } from "@reach/router";
+import React, { useEffect, useRef } from "react";
+import { Link, RouteComponentProps } from "@reach/router";
 import Nav from "../components/Nav";
 
 import Ship from "../assets/roadmap/ship.png";
-import RoadmapImage from "../assets/roadmap/roadmap.png";
+import RoadmapImage from "../assets/roadmap/roadmap.svg";
+
+import LogoImage from "../assets/common/Logo.svg";
+import Discord from "../assets/icons/discord.svg";
+import Twitter from "../assets/icons/twitter.svg";
+
+import useScrollToTop from "../lib/useScrollToTop";
 
 function Roadmap(props: RouteComponentProps) {
+  const headingRef = useRef<HTMLHeadingElement>(null);
+  const headingSpan = useRef<HTMLSpanElement>(null);
+
+  useEffect(() => {
+    headingRef.current?.classList.remove("opacity-0");
+
+    headingSpan.current?.classList.add("glow");
+  }, []);
+
+  useScrollToTop();
   return (
-    <div style={{ background: "#101010" }} className="pb-30">
+    <div style={{ background: "#101010" }}>
       <Nav />
       <div
         id="roadmap-hero"
         className="w-full h-screen py-40 relative bg-center bg-cover"
       >
-        <h1 className="text-primary-light glow text-5xl uppercase font-black italic text-center">
-          Roadmap
+        <h1
+          className="text-primary-light text-6xl uppercase font-black italic text-center duration-700 transition-all ease-out opacity-0"
+          ref={headingRef}
+        >
+          <span ref={headingSpan} className="transition-all delay-700">
+            Roadmap
+          </span>
         </h1>
         <img src={Ship} alt="Super Cool Spaceship" className="mt-10 mx-auto" />
       </div>
-      <div className="text-white mx-48 -mt-48 relative z-20">
+      <div className="text-white ml-5 mr-10 lg:mx-48 -mt-48 relative z-10">
         <div className="flex">
-          <div className="h-6 w-6 rounded-full flex-shrink-0 mt-1 mr-10 flex relative">
+          <div className="h-4 w-4 lg:h-6 lg:w-6 rounded-full flex-shrink-0 mt-1 lg:mr-10 mr-5 flex relative">
             <div className="absolute bg-primary-dark rounded-full inset-0 filter  blur-sm"></div>
-            <div className="h-4 w-4 bg-primary-light rounded-full m-auto relative z-10"></div>
+            <div className="lg:h-4 lg:w-4 h-3 w-3 bg-primary-light rounded-full m-auto relative z-10"></div>
           </div>
           <div className="w-full">
-            <h3 className="font-orb text-2xl font-medium uppercase">
+            <h3 className="font-orb lg:text-2xl text-xl font-medium uppercase">
               Q3 2021 - Force Formation
             </h3>
             <div className="mt-10 space-y-10">
               <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10">
-                <div className="flex justify-between items-baseline">
+                <div className="flex justify-between items-baseline flex-col lg:flex-row">
                   <h4 className="font-black italic uppercase text-xl">
                     Gen-1 Cyborg NFT drop (2000)
                   </h4>
-                  <div className="flex space-x-3 text-sm">
-                    <p>Mint: X</p>
-                    <p>Date: TBD</p>
+                  <div className="flex flex-wrap text-sm">
+                    <p className="mr-3">Mint: 0.42069 SOL</p>
+                    <p className="mr-3">Supply: 2k</p>
+                    <p className="mr-3">Date: TBD</p>
                   </div>
                 </div>
                 <p className="text-lg mt-5 font-medium text-gray">
@@ -49,31 +71,14 @@ function Roadmap(props: RouteComponentProps) {
                 </p>
               </div>
               <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10">
-                <div className="flex justify-between items-baseline">
-                  <h4 className="font-black italic uppercase text-xl">
-                    Gen-1 Cyborg NFT drop (2000)
-                  </h4>
-                  <div className="flex space-x-3 text-sm">
-                    <p>Mint: X</p>
-                    <p>Date: TBD</p>
-                  </div>
-                </div>
-                <p className="text-lg mt-5 font-medium text-gray">
-                  First enlistment into the 5 forces start. <br />
-                  Only the bravest souls are granted passage and take their
-                  rightful place. <br />
-                  Everything that may go wrong, will go wrong. <br />
-                  Still they believe that all is not lost and want to give
-                  humanity a fighting chance.
-                </p>
-              </div>
-              <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10">
-                <div className="flex justify-between items-baseline">
+                <div className="flex justify-between items-baseline flex-col lg:flex-row">
                   <h4 className="font-black italic uppercase text-xl">
                     Gen-1 Cyborg NFT drop (8000)
                   </h4>
-                  <div className="text-sm">
-                    <p>Date: TBD</p>
+                  <div className="flex flex-wrap text-sm">
+                    <p className="mr-3">Mint: 0.99 SOL</p>
+                    <p className="mr-3">Supply: 8k</p>
+                    <p className="mr-3">Date: TBD</p>
                   </div>
                 </div>
                 <p className="text-lg mt-5 font-medium text-gray">
@@ -85,21 +90,37 @@ function Roadmap(props: RouteComponentProps) {
                   weapon machinery factories.
                 </p>
               </div>
+              <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10">
+                <div className="flex justify-between items-baseline flex-col lg:flex-row">
+                  <h4 className="font-black italic uppercase text-xl">
+                    GEN-1 SECONDARY MARKETPLACE LISTING LAUNCHED
+                  </h4>
+                  <div className="text-sm">
+                    <p>Date: TBD</p>
+                  </div>
+                </div>
+                <p className="text-lg mt-5 font-medium text-gray">
+                  SGF Media House partners with most leading marketplaces to
+                  launch secondary marketplace listing. <br /> Some people may
+                  want to opt out after feeling the intense pressure from the
+                  training.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div className="mt-30 flex">
-          <div className="h-6 w-6 rounded-full flex-shrink-0 mt-1 mr-10 flex relative">
+        <div className="flex lg:mt-30 mt-16">
+          <div className="h-4 w-4 lg:h-6 lg:w-6 rounded-full flex-shrink-0 mt-1 lg:mr-10 mr-5 flex relative">
             <div className="absolute bg-primary-dark rounded-full inset-0 filter  blur-sm"></div>
-            <div className="h-4 w-4 bg-primary-light rounded-full m-auto relative z-10"></div>
+            <div className="h-3 w-3 lg:h-4 lg:w-4 bg-primary-light rounded-full m-auto relative z-10"></div>
           </div>
           <div>
-            <h3 className="font-orb text-2xl font-medium uppercase">
+            <h3 className="font-orb lg:text-2xl text-xl font-medium uppercase">
               Q4 2021 - SGF TRIDENT DEPLOYED
             </h3>
             <div className="mt-10 space-y-10">
               <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10">
-                <div className="flex justify-between items-baseline">
+                <div className="flex justify-between items-baseline flex-col lg:flex-row">
                   <h4 className="font-black italic uppercase text-xl">
                     SGF ECOSYSTEM FUND ROLLS OUT GRANTS PROGRAM
                   </h4>
@@ -125,7 +146,7 @@ function Roadmap(props: RouteComponentProps) {
                 </p>
               </div>
               <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10">
-                <div className="flex justify-between items-baseline">
+                <div className="flex justify-between items-baseline flex-col lg:flex-row">
                   <h4 className="font-black italic uppercase text-xl">
                     FLOOR SWEEPING 📈
                   </h4>
@@ -145,7 +166,7 @@ function Roadmap(props: RouteComponentProps) {
                 </p>
               </div>
               <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10">
-                <div className="flex justify-between items-baseline">
+                <div className="flex justify-between items-baseline flex-col lg:flex-row">
                   <h4 className="font-black italic uppercase text-xl">
                     DONATION FOR DISABLED VETERANS
                   </h4>
@@ -164,16 +185,18 @@ function Roadmap(props: RouteComponentProps) {
             </div>
           </div>
         </div>
-        <div className="mt-30  flex">
-          <div className="h-6 w-6 rounded-full flex-shrink-0 mt-1 mr-10 flex relative">
+        <div className="lg:mt-30 mt-16 flex">
+          <div className="h-4 w-4 lg:h-6 lg:w-6 rounded-full flex-shrink-0 mt-1 lg:mr-10 mr-5 flex relative">
             <div className="absolute bg-primary-dark rounded-full inset-0 filter  blur-sm"></div>
-            <div className="h-4 w-4 bg-primary-light rounded-full m-auto relative z-10"></div>
+            <div className="h-3 w-3 lg:h-4 lg:w-4 bg-primary-light rounded-full m-auto relative z-10"></div>
           </div>
           <div>
-            <h3 className="font-orb text-2xl font-medium uppercase">Q1 2022</h3>
+            <h3 className="font-orb lg:text-2xl text-xl font-medium uppercase">
+              Q1 2022
+            </h3>
             <div className="mt-10 space-y-10">
               <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10">
-                <div className="flex justify-between items-baseline">
+                <div className="flex justify-between items-baseline flex-col lg:flex-row">
                   <h4 className="font-black italic uppercase text-xl">
                     GEN-2 AR COMPATIBLE 3D CYBORGS NFT LAUNCH
                   </h4>
@@ -196,7 +219,7 @@ function Roadmap(props: RouteComponentProps) {
                 </p>
               </div>
               <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10">
-                <div className="flex justify-between items-baseline">
+                <div className="flex justify-between items-baseline flex-col lg:flex-row">
                   <h4 className="font-black italic uppercase text-xl">
                     GEN-2 3D CYBORGS MARKETPLACE LISTING
                   </h4>
@@ -210,7 +233,7 @@ function Roadmap(props: RouteComponentProps) {
                 </p>
               </div>
               <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10">
-                <div className="flex justify-between items-baseline">
+                <div className="flex justify-between items-baseline flex-col lg:flex-row">
                   <h4 className="font-black italic uppercase text-xl">
                     NEURAL FUSION OF CYBORGS NFT
                   </h4>
@@ -232,7 +255,7 @@ function Roadmap(props: RouteComponentProps) {
                 </p>
               </div>
               <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10">
-                <div className="flex justify-between items-baseline">
+                <div className="flex justify-between items-baseline flex-col lg:flex-row">
                   <h4 className="font-black italic uppercase text-xl">
                     SGF FLAGSHIP FIGHTER GAME DEMO LAUNCH
                   </h4>
@@ -256,22 +279,61 @@ function Roadmap(props: RouteComponentProps) {
             </div>
           </div>
         </div>
-        <div className="w-1 mx-2.5 mt-2 rounded-full h-full absolute top-0 left-0 bg-primary-light z-0"></div>
+        <div
+          className="w-1 lg:mx-2.5 mx-1.5 mt-2 rounded-full absolute top-0 left-0 bg-primary-light"
+          style={{ height: `calc(100% + 111px)` }}
+        ></div>
       </div>
       <div className="mt-30">
-        <img src={RoadmapImage} alt="roadmap" className="mx-auto" />
+        <img src={RoadmapImage} alt="roadmap" className="w-full" />
       </div>
-      <div className="mt-8 font-orb flex flex-wrap justify-center items-center">
-        <button className="btn-primary font-black mt-4 mr-3">FAQS</button>
-        <a
-          href="https://discord.com/invite/bBeHKHHSu5"
-          target="_blank"
-          rel="noreferrer"
-          className="btn-secondary font-black mt-4"
-        >
-          JOIN DISCORD
-        </a>
-      </div>
+
+      <footer className="flex flex-col lg:flex-row justify-between items-center lg:px-24 py-16 px-10 text-white bg-center bg-cover mt-10">
+        <div>
+          <img src={LogoImage} alt="Logo" />
+          <p className="mt-5 font-orb text-xs hidden lg:block">
+            {"</>"} with 🦾 on Solana
+          </p>
+          <div className="flex space-x-5 text-2xl mt-5 justify-center lg:justify-start">
+            <a
+              href="https://discord.com/invite/bBeHKHHSu5"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={Discord} alt="discord-icon" />
+            </a>
+            <a
+              href="https://twitter.com/SGFUnited"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={Twitter} alt="twitter-icon" />
+            </a>
+          </div>
+        </div>
+        <div className="font-orb flex flex-col items-center mx-auto lg:mx-0 mt-10 lg:mt-0 lg:max-w-xs">
+          <p className="text-sm font-medium text-gray text-center font-inter">
+            Ready for an On-chain Decentralised Galactic Adventure? Come join
+            the SGF Community, where Sci-Fi meets NFTs.
+          </p>
+          <div className="flex flex-wrap justify-end items-center">
+            <Link
+              to="/tokenomics"
+              className="footer-btn-primary font-black mt-4 lg:mr-3 w-full lg:w-auto"
+            >
+              TOKENOMICS
+            </Link>
+            <a
+              href="https://discord.com/invite/bBeHKHHSu5"
+              target="_blank"
+              rel="noreferrer"
+              className="footer-btn-secondary font-black mt-4 w-full lg:w-auto"
+            >
+              JOIN DISCORD
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
