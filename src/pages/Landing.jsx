@@ -61,11 +61,10 @@ function Landing(props) {
       <Nav />
       <div
         ref={effectRef}
-        className="bg-black text-white w-full h-screen flex items-center px-10 py-14 lg:px-30 lg:py-40 relative"
+        className="bg-black text-white w-full h-screen flex items-center px-10 py-16  lg:px-30 lg:py-40 relative"
       >
-        <div className="max-w-5xl">
+        <div className="max-w-5xl -mb-10 lg:mb-0">
           <div className="relative">
-            <div className="bg-black opacity-25 absolute inset-0 filter blur lg:hidden"></div>
             <h1
               className="lg:text-7xl text-4xl font-black italic transform transition-all opacity-0 -translate-x-6 duration-900 ease-out"
               ref={headingRef}
@@ -104,7 +103,10 @@ function Landing(props) {
             pauseOnClick={true}
           >
             <div className="relative z-10  space-x-2  py-3 font-medium text-xs lg:text-lg">
-              <span>Sale 1: Supply 2k • Mint Price 0.42069 SOL *</span>
+              <span className="font-bold">
+                Sale 1: Supply 2k • Mint Price 0.42069 SOL • 30th September, 6PM
+                UTC *
+              </span>
               <span className="underline">
                 <a
                   href="https://discord.com/invite/bBeHKHHSu5"
@@ -205,7 +207,7 @@ function Landing(props) {
         </div>
       </div>
       <div
-        className="lg:h-screen bg-center bg-cover lg:pt-40 px-10  pt-36 pb-16 relative bg-gray-dark"
+        className="lg:min-h-screen bg-center bg-cover lg:pt-40 px-10  pt-36 pb-16 relative bg-gray-dark"
         id="team"
       >
         <div className="bg-black bg-opacity-40 h-full absolute inset-0 z-0"></div>
@@ -213,6 +215,109 @@ function Landing(props) {
           <h1 className="uppercase text-primary-light glow font-black italic lg:text-5xl text-4xl text-center">
             Stellar team
           </h1>
+          {/* <div className="mt-20">
+            <div className="grid grid-cols-2 gap-10">
+              <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10 text-white">
+                <div className="flex items-start space-x-5">
+                  <img src={Kayden} alt="" className="" />
+                  <div>
+                    <p className="text-lg font-black">@kayden</p>
+                    <p className="mt-1 text-sm font-bold">
+                      Lead Smart Contract Developer
+                    </p>
+                    <p className="mt-5 leading-relaxed">
+                      A crypto-native degen who is also a pro-gamer.
+                      <br /> Ran an E-Sports Venture in his college days, now
+                      finds most days tinkering at the intersection of
+                      blockchains and gaming.
+                      <br /> 3+ years of functional programming experience
+                      through writing JavaScript. Picking up Rust to write our
+                      game contracts on Solana.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10 text-white">
+                <div className="flex items-start space-x-5">
+                  <img src={Greywolf} alt="" className="" />
+                  <div>
+                    <p className="text-lg font-black">@greywolf</p>
+                    <p className="mt-1 text-sm font-bold">Lead Game Designer</p>
+                    <p className="mt-5 leading-relaxed">
+                      A multi-disciplinary designer who believes User Experience
+                      (UX) is one of the biggest problems to solve in the crypto
+                      industry.
+                      <br /> Believes games are the perfect trojan horse to
+                      scale blockchain adoption.
+                      <br /> Before SGF, built and exited a blockchain ed-tech
+                      startup in May 2021 - that scaled upto 6000 users across
+                      12 countries within a 6 months period. After that spent 6
+                      months tinkering around with game engines (Unity, Unreal)
+                      and game mechanics to build the foundation of SGF United.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10 text-white">
+                <div className="flex items-start space-x-5">
+                  <img src={NonFungiblePrime} alt="" className="" />
+                  <div>
+                    <p className="text-lg font-black">@nonfungibleprime</p>
+                    <p className="mt-1 text-sm font-bold">
+                      Tokenomics Engineer
+                    </p>
+                    <p className="mt-5 leading-relaxed">
+                      A crypto-native entrepreneur building in the blockchain
+                      space for the past 2 years. Background in distributed
+                      systems and economics.
+                      <br /> Before SGF, scaled a crypto product studio clocking
+                      $50k MRR/40% margins which spawned a popular defi protocol
+                      in the Polkadot blockchain space.
+                      <br /> Total 5+ years of product-dev experience across
+                      leading fintech company in South East Asia/Pacific and
+                      stints at a research lab based in Switzerland.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10 text-white">
+                <div className="flex items-start space-x-5">
+                  <img src={Alphatron} alt="" className="" />
+                  <div>
+                    <p className="text-lg font-black">@alphatron</p>
+                    <p className="mt-1 text-sm font-bold">Community Builder</p>
+                    <p className="mt-5 leading-relaxed">
+                      A product geek that has designed for the biggest brands in
+                      South East Asia. Some smart city projects are using his
+                      ideas
+                      <br />
+                      Currently fascinated by all things Web3.0
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10 text-white">
+                <div className="flex items-start space-x-5">
+                  <img src={Skywalker} alt="" className="" />
+                  <div>
+                    <p className="text-lg font-black">@skywalker</p>
+                    <p className="mt-1 text-sm font-bold">
+                      Game Server Engineering/Devops
+                    </p>
+                    <p className="mt-5 leading-relaxed">
+                      A dev that started coding from the age of 15.
+                      <br /> Currently writing game server code to wrangle 100k
+                      - 1 million game state updates and how to publish these
+                      game states on Solana.
+                      <br /> Expertise in Golang and GraphQL.
+                      <br /> Before SGF, built out crypto staking DApp that
+                      currently has over $50k staked through it.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> */}
           <div className="max-w-4xl mx-auto hidden lg:block">
             <div className="font-orb text-white mt-20 flex justify-between">
               <div className="space-y-2 w-1/3">

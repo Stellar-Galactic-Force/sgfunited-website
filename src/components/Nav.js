@@ -11,78 +11,105 @@ function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <>
-      <header className="text-white bg-black fixed z-20 top-0 inset-x-0 h-16 justify-between items-center px-16  hidden lg:flex">
-        <div className="flex items-center space-x-10">
-          <div>
-            <Link to="/">
-              <Logo />
-            </Link>
-          </div>
-          <nav className="font-orb font-medium text-sm uppercase">
-            <ul className="flex space-x-7">
-              <li>
-                <Link
-                  to="/nft"
-                  className={
-                    pathname === "/nft" && "text-primary-light nav-glow"
-                  }
-                >
-                  gen-1 nft drop
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/roadmap"
-                  className={
-                    pathname === "/roadmap" && "text-primary-light nav-glow"
-                  }
-                >
-                  roadmap
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/tokenomics"
-                  className={
-                    pathname === "/tokenomics" && "text-primary-light nav-glow"
-                  }
-                >
-                  tokenomics
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/faq"
-                  className={
-                    pathname === "/faq" && "text-primary-light nav-glow"
-                  }
-                >
-                  faq
-                </Link>
-              </li>
-            </ul>
-          </nav>
+      <header className="text-white bg-black fixed z-20 top-0 inset-x-0 hidden lg:flex flex-col">
+        <div className="bg-gradient-to-r from-red-600 to-red-800 py-2 text-center px-16 uppercase font-bold italic">
+          Sale 1 Date Announced • MINT PRICE: 0.42069 SOL • 30th September, 6PM
+          UTC •{" "}
+          <a
+            href="https://cutt.ly/MET3RIM"
+            target="_blank"
+            rel="noreferrer"
+            className="underline"
+          >
+            Add to your calendar
+          </a>
         </div>
-        <div className="flex space-x-7 text-2xl">
-          <a
-            href="https://discord.com/invite/bBeHKHHSu5"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={Discord} alt="discord-icon" />
-          </a>
-          <a
-            href="https://twitter.com/SGFUnited"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={Twitter} alt="twitter-icon" />
-          </a>
+        <div className="flex justify-between items-center mt-auto flex-1 px-16 pb-3 pt-4">
+          <div className="flex items-center space-x-10">
+            <div>
+              <Link to="/">
+                <Logo />
+              </Link>
+            </div>
+            <nav className="font-orb font-medium text-sm uppercase">
+              <ul className="flex space-x-7">
+                <li>
+                  <Link
+                    to="/nft"
+                    className={
+                      pathname === "/nft" && "text-primary-light nav-glow"
+                    }
+                  >
+                    gen-1 nft drop
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/roadmap"
+                    className={
+                      pathname === "/roadmap" && "text-primary-light nav-glow"
+                    }
+                  >
+                    roadmap
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/tokenomics"
+                    className={
+                      pathname === "/tokenomics" &&
+                      "text-primary-light nav-glow"
+                    }
+                  >
+                    tokenomics
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/faq"
+                    className={
+                      pathname === "/faq" && "text-primary-light nav-glow"
+                    }
+                  >
+                    faq
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div className="flex space-x-7 text-2xl">
+            <a
+              href="https://discord.com/invite/bBeHKHHSu5"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={Discord} alt="discord-icon" />
+            </a>
+            <a
+              href="https://twitter.com/SGFUnited"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={Twitter} alt="twitter-icon" />
+            </a>
+          </div>
         </div>
       </header>
 
-      <header className="text-white bg-black fixed z-20 top-0 inset-x-0 px-5 lg:hidden">
-        <nav className="flex justify-between items-center w-full h-16">
+      <header className="text-white bg-black fixed z-20 top-0 inset-x-0  lg:hidden">
+        <div className="bg-gradient-to-r from-red-600 to-red-800 py-3 text-center uppercase font-bold italic text-xs">
+          Sale 1 Date Announced • MINT PRICE: 0.42069 SOL • 30th September, 6PM
+          UTC •{" "}
+          <a
+            href="https://cutt.ly/MET3RIM"
+            target="_blank"
+            rel="noreferrer"
+            className="underline"
+          >
+            Add to your calendar
+          </a>
+        </div>
+        <nav className="flex justify-between items-center w-full h-16 px-5">
           <Link to="/">
             <Logo />
           </Link>
@@ -91,7 +118,7 @@ function Nav() {
           </button>
         </nav>
         <nav
-          className={`mt-5 text-xl font-orb pb-6 font-medium ${
+          className={`mt-5 text-xl font-orb pb-6 px-5 font-medium ${
             menuOpen ? "block" : "hidden"
           }`}
         >

@@ -69,7 +69,7 @@ function NFT(props: RouteComponentProps) {
     >
       <Nav />
       <div
-        className=" text-white w-full lg:h-screen lg:px-30 lg:py-40 px-10 pt-32 pb-16 relative bg-center bg-cover lg:grid lg:grid-cols-2"
+        className=" text-white w-full lg:h-screen lg:px-30 lg:py-40 px-10 pt-40 pb-16 relative bg-center bg-cover lg:grid lg:grid-cols-2"
         id="nft-drop-hero"
       >
         <div className="flex flex-col items-start justify-center">
@@ -153,8 +153,8 @@ function NFT(props: RouteComponentProps) {
               </div>
             </div>
             <div className="grid grid-rows-2 lg:space-y-5 space-y-2">
-              <div className="text-3xl whitespace-nowrap truncate font-inter italic">
-                TBD
+              <div className="text-2xl whitespace-nowrap truncate font-inter italic">
+                30th Sept, 6PM UTC
               </div>
               <div className="text-lg whitespace-nowrap truncate">
                 mint date

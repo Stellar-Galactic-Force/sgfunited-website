@@ -21,13 +21,13 @@ function Roadmap(props: RouteComponentProps) {
     headingSpan.current?.classList.add("glow");
   }, []);
 
-  useScrollToTop();
+  // useScrollToTop();
   return (
     <div style={{ background: "#101010" }}>
       <Nav />
       <div
         id="roadmap-hero"
-        className="w-full h-screen py-40 relative bg-center bg-cover"
+        className="w-full h-screen py-44 relative bg-center bg-cover"
       >
         <h1
           className="text-primary-light text-6xl uppercase font-black italic text-center duration-700 transition-all ease-out opacity-0"
@@ -58,16 +58,20 @@ function Roadmap(props: RouteComponentProps) {
                   <div className="flex flex-wrap text-sm">
                     <p className="mr-3">Mint: 0.42069 SOL</p>
                     <p className="mr-3">Supply: 2k</p>
-                    <p className="mr-3">Date: TBD</p>
+                    <p className="mr-3">Date: 30th September, 6PM UTC</p>
                   </div>
                 </div>
-                <p className="text-lg mt-5 font-medium text-gray">
-                  First enlistment into the 5 forces start. <br />
-                  Only the bravest souls are granted passage and take their
-                  rightful place. <br />
-                  Everything that may go wrong, will go wrong. <br />
-                  Still they believe that all is not lost and want to give
-                  humanity a fighting chance.
+                <p className="text-lg mt-7 font-medium text-gray">
+                  The first enlistment into the 5 forces starts.
+                  <p className="mt-5">
+                    Only the bravest souls are granted passage and take their
+                    rightful place. <br />
+                    Everything that may go wrong will go wrong.
+                  </p>
+                  <p className="mt-5">
+                    Still, they believe that all is not lost and want to give
+                    humanity a fighting chance.
+                  </p>
                 </p>
               </div>
               <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10">
@@ -81,13 +85,17 @@ function Roadmap(props: RouteComponentProps) {
                     <p className="mr-3">Date: TBD</p>
                   </div>
                 </div>
-                <p className="text-lg mt-5 font-medium text-gray">
-                  Second enlistment into the 5 forces start. <br />
-                  Each force finally gets there 100 generals, 400 lietuants,
-                  1500 soldiers. <br />
-                  Generals start to coordinate to build out their factions whule
-                  lietutants and soliders work together to setup garricks and
-                  weapon machinery factories.
+                <p className="text-lg mt-7 font-medium text-gray">
+                  <p>
+                    The second enlistment into the 5 forces starts. <br />
+                    Each force finally gets there 100 generals, 400 lieutenants,
+                    1500 soldiers.
+                  </p>
+                  <p className="mt-5">
+                    Generals start to coordinate to build out their factions
+                    while lieutenants and soldiers work together to set up
+                    barracks and weapon machinery factories.{" "}
+                  </p>
                 </p>
               </div>
               <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10">
@@ -99,11 +107,15 @@ function Roadmap(props: RouteComponentProps) {
                     <p>Date: TBD</p>
                   </div>
                 </div>
-                <p className="text-lg mt-5 font-medium text-gray">
-                  SGF Media House partners with most leading marketplaces to
-                  launch secondary marketplace listing. <br /> Some people may
-                  want to opt out after feeling the intense pressure from the
-                  training.
+                <p className="text-lg mt-7 font-medium text-gray">
+                  <p className="mt-5">
+                    SGF Media House partners with most of the leading
+                    marketplaces to launch secondary marketplace listing.
+                  </p>
+                  <p className="mt-5">
+                    Some people may want to opt-out after feeling the intense
+                    pressure from the training.
+                  </p>
                 </p>
               </div>
             </div>
@@ -128,12 +140,16 @@ function Roadmap(props: RouteComponentProps) {
                     <p>Date: TBD</p>
                   </div>
                 </div>
-                <p className="text-lg mt-5 font-medium text-gray">
-                  Having blueprints from the future is not enough. <br />
-                  SGF requires a healthy functioning economy to rapidly
-                  accelerate humanity’s technological progress. <br />
-                  A rolling grants program is initialized to fund enterprenures
-                  and builders.
+                <p className="text-lg mt-7 font-medium text-gray">
+                  <p>Having blueprints from the future is not enough.</p>
+                  <p className="mt-5">
+                    SGF requires a healthy functioning economy to rapidly
+                    accelerate humanity’s technological progress.
+                  </p>
+                  <p className="mt-5">
+                    A rolling grants program is initialized to fund
+                    entrepreneurs and builders.
+                  </p>
                   <br /> <br />
                   Grant’s mandate: build out the media network layer of the
                   media house. <br />
@@ -154,15 +170,20 @@ function Roadmap(props: RouteComponentProps) {
                     <p>Date: TBD</p>
                   </div>
                 </div>
-                <p className="text-lg mt-5 font-medium text-gray">
-                  SGF Media House starts sweeping Gen-1 NFT Cyborg collection
-                  floor due to routine maintence. After enough stress testing
-                  has been done, these are then brought back into the economy in
-                  the form of giveaways to the most committed soldiers/factions
-                  in SGF. <br />
-                  <br />
-                  This creates deflation in the short term as circulating supply
-                  is reduced.
+                <p className="text-lg mt-7 font-medium text-gray">
+                  <p>
+                    SGF Media House starts sweeping Gen-1 NFT Cyborg collection
+                    floor due to routine maintenance.
+                  </p>
+                  <p className="mt-5">
+                    After enough stress testing has been done, these are then
+                    brought back into the economy in the form of giveaways to
+                    the most committed soldiers/factions in SGF.
+                  </p>
+                  <p className="mt-5">
+                    This creates deflation in the short term as circulating
+                    supply is reduced.
+                  </p>
                 </p>
               </div>
               <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10">
@@ -174,12 +195,19 @@ function Roadmap(props: RouteComponentProps) {
                     <p>Date: TBD</p>
                   </div>
                 </div>
-                <p className="text-lg mt-5 font-medium text-gray">
-                  True Cyborgs = the people who served their country + had to
-                  become a cyborg due to injuries from war. <br />
-                  After all legal papework is finished, first tranch of donation
-                  will be processed. <br />
-                  Veterans join us on our galactic podcast to share their story.
+                <p className="text-lg mt-7 font-medium text-gray">
+                  <p>
+                    True Cyborgs = the people who served their country + had to
+                    become a cyborg due to injuries from the war.
+                  </p>
+                  <p className="mt-5">
+                    After all legal paperwork is finished, the first tranch of
+                    the donation will be processed.
+                  </p>
+                  <p className="mt-5">
+                    Veterans join us on our galactic podcast to share their
+                    stories.
+                  </p>
                 </p>
               </div>
             </div>
@@ -204,18 +232,24 @@ function Roadmap(props: RouteComponentProps) {
                     <p>Date: TBD</p>
                   </div>
                 </div>
-                <p className="text-lg mt-5 font-medium text-gray">
-                  After rapid progress over the last quarter, it’s time to scale
-                  the force with more troops. <br />
-                  <br />
-                  20k (subject to change) badass 3D Cyborgs will join SGF’s
-                  media house. <br />
-                  Owner of the NFT get’s access to asset pack that contains high
-                  resolution render and T Pose OBJ file that can be imported
-                  into standard 3D modelling/animation softwares. <br />
-                  <br />
-                  Imagine your Cyborg blazing guns in Augmented Reality. This is
-                  it.
+                <p className="text-lg mt-7 font-medium text-gray">
+                  <p>
+                    After rapid progress over the last quarter, it’s time to
+                    scale the force with more troops.{" "}
+                  </p>
+                  <p className="mt-5">
+                    20k (subject to change) badass 3D Cyborgs will join SGF’s
+                    media house.{" "}
+                  </p>
+                  <p className="mt-5">
+                    The owner of the NFT gets access to the assets -
+                    high-resolution renders and a T Pose OBJ file that can be
+                    imported into standard 3D modeling/animation software.
+                  </p>
+                  <p className="mt-5">
+                    Imagine your Cyborg blazing guns in Augmented Reality. This
+                    is it.
+                  </p>
                 </p>
               </div>
               <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10">
@@ -227,7 +261,7 @@ function Roadmap(props: RouteComponentProps) {
                     <p>Date: TBD</p>
                   </div>
                 </div>
-                <p className="text-lg mt-5 font-medium text-gray">
+                <p className="text-lg mt-7 font-medium text-gray">
                   3.5% of secondary royalties are disbursed pro-rata to Gen 1
                   holders.
                 </p>
@@ -264,7 +298,7 @@ function Roadmap(props: RouteComponentProps) {
                   </div>
                 </div>
                 <p className="text-lg mt-5 font-medium text-gray">
-                  After first and third party NFT drops, SGF Media House starts
+                  After first and third-party NFT drops, SGF Media House starts
                   arming itself with another IP drop.
                   <br />
                   <br /> What would a Tekken meets Aliens vs Predators game look
