@@ -215,27 +215,46 @@ function Landing(props) {
           </h1>
           <div className="max-w-4xl mx-auto hidden lg:block">
             <div className="font-orb text-white mt-20 flex justify-between">
-              <div className="space-y-2">
+              <div className="space-y-2 w-1/3">
                 <img src={Kayden} alt="" className="mx-auto" />
                 <p className="text-center">@kayden</p>
+                <p className="mt-2 text-center text-sm">
+                  10x developer building across DeFi, NFT & blockchain gaming.
+                </p>
               </div>
-              <div className="space-y-2">
+              <div className="space-y-2 w-1/3">
                 <img src={NonFungiblePrime} alt="" className="mx-auto" />
                 <p className="text-center">@nonfungibleprime</p>
+                <p className="mt-2 text-center text-sm">
+                  A crypto-native entrepreneur and an avid consumer of Sci-Fi
+                  content.
+                </p>
               </div>
-              <div className="space-y-2">
+              <div className="space-y-2 w-1/3">
                 <img src={Greywolf} alt="" className="mx-auto" />
                 <p className="text-center">@greywolf</p>
+                <p className="mt-2 text-center text-sm">
+                  A designer researching and designing for all things Crypto &
+                  Web 3.0.
+                </p>
               </div>
             </div>
             <div className="font-orb text-white mt-16 flex justify-evenly">
-              <div className="space-y-2">
+              <div className="space-y-2 w-2/5">
                 <img src={Alphatron} alt="" className="mx-auto" />
                 <p className="text-center">@alphatron</p>
+                <p className="mt-2 text-center text-sm">
+                  Product ∩ UX ∩ Blockchain Guy. Often wondering about the
+                  'whys' & 'whats' of Web3.0 space.
+                </p>
               </div>
-              <div className="space-y-2">
+              <div className="space-y-2 w-2/5">
                 <img src={Skywalker} alt="" className="mx-auto" />
                 <p className="text-center">@skywalker</p>
+                <p className="mt-2 text-center text-sm">
+                  A full-time builder focused on the Web3 space. Building cool
+                  products & diving into protocols.
+                </p>
               </div>
             </div>
           </div>
@@ -248,6 +267,9 @@ function Landing(props) {
                   className="mx-auto w-30 h-30 lg:w-auto lg:h-auto"
                 />
                 <p className="text-center">@kayden</p>
+                <p className="mt-2 text-center text-xs">
+                  10x developer building across DeFi, NFT & blockchain gaming.
+                </p>
               </div>
               <div className="space-y-2">
                 <img
@@ -258,6 +280,10 @@ function Landing(props) {
                 <p className="text-center  whitespace-nowrap truncate">
                   @nonfungibleprime
                 </p>
+                <p className="mt-2 text-center text-xs">
+                  A crypto-native entrepreneur and an avid consumer of Sci-Fi
+                  content.
+                </p>
               </div>
               <div className="space-y-2">
                 <img
@@ -266,6 +292,10 @@ function Landing(props) {
                   className="mx-auto w-30 h-30 lg:w-auto lg:h-auto"
                 />
                 <p className="text-center">@greywolf</p>
+                <p className="mt-2 text-center text-xs">
+                  A designer researching and designing for all things Crypto &
+                  Web 3.0.
+                </p>
               </div>
               <div className="space-y-2">
                 <img
@@ -274,16 +304,24 @@ function Landing(props) {
                   className="mx-auto w-30 h-30 lg:w-auto lg:h-auto"
                 />
                 <p className="text-center">@alphatron</p>
+                <p className="mt-2 text-center text-xs">
+                  Product ∩ UX ∩ Blockchain Guy. Often wondering about the
+                  'whys' & 'whats' of Web3.0 space.
+                </p>
               </div>
             </div>
 
-            <div className="space-y-2 mt-5 font-orb">
+            <div className="space-y-2 mt-5 font-orb text-white">
               <img
                 src={Skywalker}
                 alt=""
                 className="mx-auto w-30 h-30 lg:w-auto lg:h-auto"
               />
-              <p className="text-center text-white">@skywalker</p>
+              <p className="text-center ">@skywalker</p>
+              <p className="mt-2 text-center text-xs w-2/3 mx-auto">
+                A full-time builder focused on the Web3 space. Building cool
+                products & diving into protocols.
+              </p>
             </div>
           </div>
         </div>
