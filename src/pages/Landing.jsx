@@ -187,7 +187,7 @@ function Landing(props) {
           <p className="mt-10 text-white lg:text-3xl text-2xl font-orb uppercase font-black">
             Intellectual property DROPs planned: <br />
             <span className="text-primary-dark glow">
-              GENSIS 10k Gen-1 CYBORG
+              GENESIS 10k Gen-1 CYBORG
             </span>
           </p>
 
@@ -291,7 +291,7 @@ function Landing(props) {
                       systems and economics.
                       <br />
                       <br /> Before SGF, scaled a crypto product studio clocking
-                      $50k MRR/40% margins which spawned a popular defi protocol
+                      $50k MRR/40% margins which spawned a popular DeFi protocol
                       in the Polkadot blockchain space.
                       <br />
                       <br /> Total 5+ years of product-dev experience across
@@ -493,7 +493,7 @@ function Landing(props) {
         </div>
         <div className="font-orb flex flex-col items-center mx-auto lg:mx-0 mt-10 lg:mt-0 lg:max-w-xs">
           <p className="text-sm font-medium text-gray text-center font-inter">
-            Ready for an On-chain Decentralised Galactic Adventure? Come join
+            Ready for an On-chain Decentralized Galactic Adventure? Come join
             the SGF Community, where Sci-Fi meets NFTs.
           </p>
           <div className="flex flex-wrap justify-end items-center">

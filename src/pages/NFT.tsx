@@ -34,7 +34,7 @@ import TacticianMobile from "../assets/nft/cyborg-mobile/tactician-mobile.svg";
 import PlanetBrown from "../assets/nft/decorative/planet-brown.svg";
 import Meteor from "../assets/nft/decorative/meteor.svg";
 import PlanetBlue from "../assets/nft/decorative/planet-blue.svg";
-import Satelite from "../assets/nft/decorative/satelite.svg";
+import Satellite from "../assets/nft/decorative/satelite.svg";
 import StoneGrey from "../assets/nft/decorative/stone-grey.svg";
 import WhiteSpaceship from "../assets/nft/decorative/white-spaceship.png";
 
@@ -219,8 +219,8 @@ function NFT(props: RouteComponentProps) {
         </div>
         <div className="text-white font-orb uppercase relative lg:px-48">
           <img
-            src={Satelite}
-            alt="Satelite"
+            src={Satellite}
+            alt="Satellite"
             className="absolute top-0 left-0 hidden lg:block"
           />
           <p className="text-2xl font-black text-center mt-28">
@@ -302,7 +302,7 @@ function NFT(props: RouteComponentProps) {
           />
           <h1 className="text-3xl font-black ">
             lastly <span className="text-primary-dark">bg</span> reflects
-            cybgorg's space base posting
+            cyborg's space base posting
           </h1>
           <div className="mt-16 lg:grid-cols-4 grid-cols-2 gap-10 lg:gap-14 text-lg font-medium max-w-6xl mx-auto grid">
             <div>
@@ -394,7 +394,7 @@ function NFT(props: RouteComponentProps) {
             <div className="text-white font-orb font-medium space-y-5 text-xl uppercase">
               <p>They operate in stealth.</p>
               <p>
-                Not much is known AS opponenents didn’t live to tell the tale.
+                Not much is known AS opponents didn’t live to tell the tale.
               </p>
             </div>
             <div className="flex justify-center items-center">
@@ -435,7 +435,7 @@ function NFT(props: RouteComponentProps) {
         <div className="mt-16">
           <div className="bg-gray-dark border border-gray-light rounded-md w-full grid grid-cols-3 gap-5 p-10 pb-0">
             <div className="text-white font-orb font-medium space-y-5 text-xl">
-              <p>CYBERNETIC MUTATION INCRESAED THEIR IQ OVER 9000</p>
+              <p>CYBERNETIC MUTATION INCREASED THEIR IQ OVER 9000</p>
               <p>SGF’S NEURAL ENGINE TO POWER STRATEGIC DECISION MAKING.</p>
             </div>
             <div className="flex justify-center items-center">
@@ -478,7 +478,7 @@ function NFT(props: RouteComponentProps) {
         </div>
         <div className="font-orb flex flex-col items-center mx-auto lg:mx-0 mt-10 lg:mt-0 lg:max-w-xs">
           <p className="text-sm font-medium text-gray text-center font-inter">
-            Ready for an On-chain Decentralised Galactic Adventure? Come join
+            Ready for an On-chain Decentralized Galactic Adventure? Come join
             the SGF Community, where Sci-Fi meets NFTs.
           </p>
           <div className="flex flex-wrap justify-end items-center">

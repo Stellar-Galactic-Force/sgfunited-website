@@ -2,7 +2,7 @@ import { Link, RouteComponentProps } from "@reach/router";
 import Nav from "../components/Nav";
 
 import RevenueShare from "../assets/tokenomics/revenue-share.svg";
-import RoyaltyBreakdwon from "../assets/tokenomics/royalty-breakdown-mobile.svg";
+import RoyaltyBreakdown from "../assets/tokenomics/royalty-breakdown-mobile.svg";
 import Summary from "../assets/tokenomics/summary-illustration.svg";
 import SummaryMobile from "../assets/tokenomics/summary-mobile.svg";
 
@@ -59,7 +59,7 @@ function Tokenomics(props: RouteComponentProps) {
               />
             </div>
             <img
-              src={RoyaltyBreakdwon}
+              src={RoyaltyBreakdown}
               className="block lg:hidden mx-auto mt-16"
               alt=""
             />
@@ -103,7 +103,7 @@ function Tokenomics(props: RouteComponentProps) {
               <br /> SGF’s FLAGSHIP FIGHTER GENRE GAME
               <br /> IS ALLOCATED TO{" "}
               <span className="text-primary-dark">
-                EARLY BELEIVERS STAKE POOL
+                EARLY BELIEVERS STAKE POOL
               </span>
               <br />
               <br /> STAKING{" "}
@@ -156,7 +156,7 @@ function Tokenomics(props: RouteComponentProps) {
         </div>
         <div className="font-orb flex flex-col items-center mx-auto lg:mx-0 mt-10 lg:mt-0 lg:max-w-xs">
           <p className="text-sm font-medium text-gray text-center font-inter">
-            Ready for an On-chain Decentralised Galactic Adventure? Come join
+            Ready for an On-chain Decentralized Galactic Adventure? Come join
             the SGF Community, where Sci-Fi meets NFTs.
           </p>
           <div className="flex flex-wrap justify-end items-center">

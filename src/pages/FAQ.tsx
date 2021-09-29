@@ -220,7 +220,7 @@ function FAQ(props: RouteComponentProps) {
           </div>
           <div className="font-orb flex flex-col items-center mx-auto lg:mx-0 mt-10 lg:mt-0 lg:max-w-xs">
             <p className="text-sm font-medium text-gray text-center font-inter">
-              Ready for an On-chain Decentralised Galactic Adventure? Come join
+              Ready for an On-chain Decentralized Galactic Adventure? Come join
               the SGF Community, where Sci-Fi meets NFTs.
             </p>
             <div className="flex flex-wrap justify-end items-center">

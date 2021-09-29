@@ -201,7 +201,7 @@ function Roadmap(props: RouteComponentProps) {
                     become a cyborg due to injuries from the war.
                   </p>
                   <p className="mt-5">
-                    After all legal paperwork is finished, the first tranch of
+                    After all legal paperwork is finished, the first tranche of
                     the donation will be processed.
                   </p>
                   <p className="mt-5">
@@ -347,7 +347,7 @@ function Roadmap(props: RouteComponentProps) {
         </div>
         <div className="font-orb flex flex-col items-center mx-auto lg:mx-0 mt-10 lg:mt-0 lg:max-w-xs">
           <p className="text-sm font-medium text-gray text-center font-inter">
-            Ready for an On-chain Decentralised Galactic Adventure? Come join
+            Ready for an On-chain Decentralized Galactic Adventure? Come join
             the SGF Community, where Sci-Fi meets NFTs.
           </p>
           <div className="flex flex-wrap justify-end items-center">
