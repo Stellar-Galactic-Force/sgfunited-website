@@ -3,7 +3,7 @@ import { Link, RouteComponentProps } from "@reach/router";
 import { Disclosure } from "@headlessui/react";
 
 import Nav from "../components/Nav";
-import CyborgEyeShadow from "../assets/faq/cyborg-eye-shadow.png";
+// import CyborgEyeShadow from "../assets/faq/cyborg-eye-shadow.png";
 
 import LogoImage from "../assets/common/Logo.svg";
 import Discord from "../assets/icons/discord.svg";
