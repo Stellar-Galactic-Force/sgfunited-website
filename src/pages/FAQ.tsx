@@ -29,11 +29,12 @@ function FAQ(props: RouteComponentProps) {
     },
     {
       question: "How much will it be to mint 1 Cyborg?",
-      answer: "0.99 SOL",
+      answer: "0.42069 SOL during Sale 1 & 0.99 SOL during Sale 2.",
     },
     {
       question: "Where will I be able to mint Cyborgs?",
-      answer: "TBD",
+      answer:
+        "The link for minting will be available in our Discord, right before the sale.",
     },
     {
       question: "What wallets do you support?",
@@ -50,7 +51,8 @@ function FAQ(props: RouteComponentProps) {
     },
     {
       question: "Will there be a Marketplace?",
-      answer: "Yes, the marketplace will be decided super soon.",
+      answer:
+        "Yes, the Gen-1 Cyborgs will be available on multiple marketplaces. Details will come out after the second sale.",
     },
     {
       question: "Do you have a long-term roadmap?",
@@ -67,12 +69,13 @@ function FAQ(props: RouteComponentProps) {
     },
     {
       question: "I won a Giveaway Cyborg NFT, when will I get it?",
-      answer: "Post-launch",
+      answer:
+        "The Cyborgs for giveaway will be sent out as soon as the sale is over.",
     },
-    {
-      question: "I purchased a Cyborg NFT in Presale, when will I get it?",
-      answer: "Post-launch",
-    },
+    // {
+    //   question: "I purchased a Cyborg NFT in Presale, when will I get it?",
+    //   answer: "Post-launch",
+    // },
   ];
 
   const headingRef = useRef<HTMLHeadingElement>(null);
@@ -86,7 +89,7 @@ function FAQ(props: RouteComponentProps) {
   return (
     <div style={{ background: "#101010" }} className="min-h-screen">
       <Nav />
-      <main className="pt-36">
+      <main className="pt-44">
         <h1
           className="text-center text-primary-light glow text-5xl font-black italic transition-all opacity-0 duration-700"
           ref={headingRef}

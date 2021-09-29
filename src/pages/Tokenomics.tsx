@@ -27,7 +27,7 @@ function Tokenomics(props: RouteComponentProps) {
       <main>
         {/* Hero section */}
         <div
-          className="w-full bg-cover bg-center bg-no-repeat flex justify-center items-center lg:pt-56 lg:pb-44 lg:px-0   px-24 py-44"
+          className="w-full bg-cover bg-center bg-no-repeat flex justify-center items-center lg:pt-56 lg:pb-44 lg:px-0  px-24 pt-48 pb-44"
           id="tokenomics-hero"
         >
           <h1
