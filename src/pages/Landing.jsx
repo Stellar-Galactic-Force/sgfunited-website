@@ -340,12 +340,15 @@ function Landing(props) {
                     </p> */}
                     <p className="mt-8 leading-relaxed text-sm lg:text-base">
                       A dev that started coding from the age of 15.
+                      <br />
                       <br /> Currently writing game server code to wrangle 100k
                       - 1 million game state updates and how to publish these
                       game states on Solana.
+                      <br />
                       <br /> Expertise in Golang and GraphQL.
+                      <br />
                       <br /> Before SGF, built out crypto staking DApp that
-                      currently has over $50k staked through it.
+                      currently has over $100k staked through it.
                     </p>
                   </div>
                 </div>
