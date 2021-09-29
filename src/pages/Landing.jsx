@@ -215,21 +215,28 @@ function Landing(props) {
           <h1 className="uppercase text-primary-light glow font-black italic lg:text-5xl text-4xl text-center">
             Stellar team
           </h1>
-          {/* <div className="mt-20">
-            <div className="grid grid-cols-2 gap-10">
-              <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10 text-white">
-                <div className="flex items-start space-x-5">
-                  <img src={Kayden} alt="" className="" />
-                  <div>
-                    <p className="text-lg font-black">@kayden</p>
-                    <p className="mt-1 text-sm font-bold">
-                      Lead Smart Contract Developer
+          <div className="mt-20 lg:px-10">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+              <div className="w-full p-10 text-white">
+                <div className="flex flex-col justify-start lg:flex-row lg:items-start lg:space-x-5">
+                  <img src={Kayden} alt="" />
+                  <div className="mt-5 lg:mt-0">
+                    <p className="text-lg font-black">
+                      @kayden{" "}
+                      <span className="font-normal text-sm">
+                        | Smart Contract Lead
+                      </span>
                     </p>
-                    <p className="mt-5 leading-relaxed">
+                    {/* <p className="mt-1 text-sm font-bold">
+                      Lead Smart Contract Developer
+                    </p> */}
+                    <p className="mt-8 leading-relaxed text-sm lg:text-base">
                       A crypto-native degen who is also a pro-gamer.
+                      <br />
                       <br /> Ran an E-Sports Venture in his college days, now
                       finds most days tinkering at the intersection of
                       blockchains and gaming.
+                      <br />
                       <br /> 3+ years of functional programming experience
                       through writing JavaScript. Picking up Rust to write our
                       game contracts on Solana.
@@ -237,18 +244,25 @@ function Landing(props) {
                   </div>
                 </div>
               </div>
-              <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10 text-white">
-                <div className="flex items-start space-x-5">
+              <div className="w-full p-10 text-white">
+                <div className="flex flex-col justify-start lg:flex-row lg:items-start lg:space-x-5">
                   <img src={Greywolf} alt="" className="" />
-                  <div>
-                    <p className="text-lg font-black">@greywolf</p>
-                    <p className="mt-1 text-sm font-bold">Lead Game Designer</p>
-                    <p className="mt-5 leading-relaxed">
+                  <div className="mt-5 lg:mt-0">
+                    <p className="text-lg font-black">
+                      @greywolf{" "}
+                      <span className="font-normal text-sm">
+                        | Lead Game Designer
+                      </span>
+                    </p>
+                    {/* <p className="mt-1 text-sm font-bold">Lead Game Designer</p> */}
+                    <p className="mt-8 leading-relaxed text-sm lg:text-base">
                       A multi-disciplinary designer who believes User Experience
                       (UX) is one of the biggest problems to solve in the crypto
                       industry.
+                      <br />
                       <br /> Believes games are the perfect trojan horse to
                       scale blockchain adoption.
+                      <br />
                       <br /> Before SGF, built and exited a blockchain ed-tech
                       startup in May 2021 - that scaled upto 6000 users across
                       12 countries within a 6 months period. After that spent 6
@@ -258,21 +272,28 @@ function Landing(props) {
                   </div>
                 </div>
               </div>
-              <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10 text-white">
-                <div className="flex items-start space-x-5">
+              <div className="w-full p-10 text-white">
+                <div className="flex flex-col justify-start lg:flex-row lg:items-start lg:space-x-5">
                   <img src={NonFungiblePrime} alt="" className="" />
-                  <div>
-                    <p className="text-lg font-black">@nonfungibleprime</p>
-                    <p className="mt-1 text-sm font-bold">
-                      Tokenomics Engineer
+                  <div className="mt-5 lg:mt-0">
+                    <p className="text-lg font-black">
+                      @nonfungibleprime{" "}
+                      <span className="font-normal text-sm">
+                        | Tokenomics Engineer
+                      </span>
                     </p>
-                    <p className="mt-5 leading-relaxed">
+                    {/* <p className="mt-1 text-sm font-bold">
+                      Tokenomics Engineer
+                    </p> */}
+                    <p className="mt-8 leading-relaxed text-sm lg:text-base">
                       A crypto-native entrepreneur building in the blockchain
                       space for the past 2 years. Background in distributed
                       systems and economics.
+                      <br />
                       <br /> Before SGF, scaled a crypto product studio clocking
                       $50k MRR/40% margins which spawned a popular defi protocol
                       in the Polkadot blockchain space.
+                      <br />
                       <br /> Total 5+ years of product-dev experience across
                       leading fintech company in South East Asia/Pacific and
                       stints at a research lab based in Switzerland.
@@ -280,31 +301,44 @@ function Landing(props) {
                   </div>
                 </div>
               </div>
-              <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10 text-white">
-                <div className="flex items-start space-x-5">
+              <div className="w-full p-10 text-white">
+                <div className="flex flex-col justify-start lg:flex-row lg:items-start lg:space-x-5">
                   <img src={Alphatron} alt="" className="" />
-                  <div>
-                    <p className="text-lg font-black">@alphatron</p>
-                    <p className="mt-1 text-sm font-bold">Community Builder</p>
-                    <p className="mt-5 leading-relaxed">
+                  <div className="mt-5 lg:mt-0">
+                    <p className="text-lg font-black">
+                      @alphatron{" "}
+                      <span className="font-normal text-sm">
+                        | Community Builder
+                      </span>
+                    </p>
+                    {/* <p className="mt-1 text-sm font-bold">Community Builder</p> */}
+                    <p className="mt-8 leading-relaxed text-sm lg:text-base">
                       A product geek that has designed for the biggest brands in
-                      South East Asia. Some smart city projects are using his
-                      ideas
+                      Italy, Hong Kong, and Australia. Represented his country
+                      in the World User Experience Championship as a top 10
+                      finalist.
                       <br />
-                      Currently fascinated by all things Web3.0
+                      <br /> Before SGF, ran a community of devs and designers
+                      that at its peak was 100+ members strong. Now using that
+                      experience to help build the SGF community!
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="bg-gray-dark border border-gray-light rounded-md w-full p-10 text-white">
-                <div className="flex items-start space-x-5">
+              <div className="w-full p-10 text-white">
+                <div className="flex flex-col justify-start lg:flex-row lg:items-start lg:space-x-5">
                   <img src={Skywalker} alt="" className="" />
-                  <div>
-                    <p className="text-lg font-black">@skywalker</p>
-                    <p className="mt-1 text-sm font-bold">
-                      Game Server Engineering/Devops
+                  <div className="mt-5 lg:mt-0">
+                    <p className="text-lg font-black">
+                      @skywalker{" "}
+                      <span className="font-normal text-sm">
+                        | Game Server Engineering/Devops
+                      </span>
                     </p>
-                    <p className="mt-5 leading-relaxed">
+                    {/* <p className="mt-1 text-sm font-bold">
+                      Game Server Engineering/Devops
+                    </p> */}
+                    <p className="mt-8 leading-relaxed text-sm lg:text-base">
                       A dev that started coding from the age of 15.
                       <br /> Currently writing game server code to wrangle 100k
                       - 1 million game state updates and how to publish these
@@ -317,8 +351,8 @@ function Landing(props) {
                 </div>
               </div>
             </div>
-          </div> */}
-          <div className="max-w-4xl mx-auto hidden lg:block">
+          </div>
+          {/* <div className="max-w-4xl mx-auto hidden lg:block">
             <div className="font-orb text-white mt-20 flex justify-between">
               <div className="space-y-2 w-1/3">
                 <img src={Kayden} alt="" className="mx-auto" />
@@ -362,8 +396,8 @@ function Landing(props) {
                 </p>
               </div>
             </div>
-          </div>
-          <div className="max-w-4xl mx-auto lg:hidden block">
+          </div> */}
+          {/* <div className="max-w-4xl mx-auto lg:hidden block">
             <div className="grid grid-cols-2 font-orb text-white mt-10 gap-5">
               <div className="space-y-2">
                 <img
@@ -428,7 +462,7 @@ function Landing(props) {
                 products & diving into protocols.
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <footer className="flex flex-col lg:flex-row justify-between items-center lg:px-24 py-16 px-10 text-white bg-center bg-cover ">

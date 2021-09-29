@@ -21,7 +21,7 @@ function Roadmap(props: RouteComponentProps) {
     headingSpan.current?.classList.add("glow");
   }, []);
 
-  // useScrollToTop();
+  useScrollToTop();
   return (
     <div style={{ background: "#101010" }}>
       <Nav />

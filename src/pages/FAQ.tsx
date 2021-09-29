@@ -96,12 +96,65 @@ function FAQ(props: RouteComponentProps) {
         >
           FAQS
         </h1>
-        <section className="relative mt-10 lg:-mt-10  lg:px-52 px-10">
-          <img
-            src={CyborgEyeShadow}
-            alt="Cyborg sillouhette with glow eyes"
-            className="mt-2 ml-10 hidden lg:block"
-          />
+        <section className="grid sm:grid-cols-2 2xl:grid-cols-4 gap-10 px-10 lg:px-52 mt-16">
+          <div className="flex flex-col justify-center items-center">
+            <iframe
+              width="auto"
+              height="auto"
+              className="rounded-md overflow-hidden"
+              src="https://www.youtube.com/embed/WpL3lAnVejg"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            ></iframe>
+            <p className="text-white mt-3">
+              What is SGF United and what is a sci-fi media house?
+            </p>
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <iframe
+              width="auto"
+              height="auto"
+              className="rounded-md overflow-hidden"
+              src="https://www.youtube.com/embed/UxMLHigzmcM"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            ></iframe>
+            <p className="text-white mt-3">
+              What is the rarity system like for Gen-1 Cyborgs?
+            </p>
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <iframe
+              width="auto"
+              height="auto"
+              className="rounded-md overflow-hidden"
+              src="https://www.youtube.com/embed/_cX52G2dgCg"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            ></iframe>
+            <p className="text-white mt-3">
+              Why should I hold a Gen-1 NFT Cyborg - Part 1
+            </p>
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <iframe
+              width="auto"
+              height="auto"
+              className="rounded-md overflow-hidden"
+              src="https://www.youtube.com/embed/1eVSDpNuRvg"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            ></iframe>
+            <p className="text-white mt-3">
+              Why should I hold a Gen-1 NFT Cyborg - Part 2
+            </p>
+          </div>
+        </section>
+        <section className="relative mt-10  lg:px-52 px-10">
           <dl className="space-y-5">
             {faqs.map((faq) => (
               <Disclosure

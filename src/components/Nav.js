@@ -74,6 +74,9 @@ function Nav() {
                     faq
                   </Link>
                 </li>
+                <li>
+                  <a href={pathname == "/" ? "#team" : "/#team"}>team</a>
+                </li>
               </ul>
             </nav>
           </div>
