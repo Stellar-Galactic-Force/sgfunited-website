@@ -103,10 +103,7 @@ function Landing(props) {
             pauseOnClick={true}
           >
             <div className="relative z-10  space-x-2  py-3 font-medium text-xs lg:text-lg">
-              <span className="font-bold">
-                Sale 1: Supply 2k • Mint Price 0.42069 SOL • 30th September, 6PM
-                UTC *
-              </span>
+              <span>Sale 1 SOLD OUT IN 4 MINUTES • SALE 2 NEXT WEEK *</span>
               <span className="underline">
                 <a
                   href="https://discord.com/invite/bBeHKHHSu5"

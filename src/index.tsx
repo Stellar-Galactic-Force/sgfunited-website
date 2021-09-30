@@ -1,14 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './styles/index.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./styles/index.css";
 
-import Landing from './pages/Landing.jsx';
-import { Router } from '@reach/router';
-import reportWebVitals from './reportWebVitals';
-import NFT from './pages/NFT';
-import Roadmap from './pages/Roadmap';
-import Tokenomics from './pages/Tokenomics';
-import Mint from './App';
+import Landing from "./pages/Landing.jsx";
+import { Router } from "@reach/router";
+import reportWebVitals from "./reportWebVitals";
+import NFT from "./pages/NFT";
+import Roadmap from "./pages/Roadmap";
+import Tokenomics from "./pages/Tokenomics";
+import Mint from "./App";
 import FAQ from "./pages/FAQ";
 import Game from "./pages/Game";
 
@@ -27,7 +27,7 @@ ReactDOM.render(
       </Router>
     </div>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
