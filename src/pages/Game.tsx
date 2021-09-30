@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { Link, RouteComponentProps } from "@reach/router";
 import Nav from "../components/Nav";
 import LogoImage from "../assets/common/Logo.svg";
