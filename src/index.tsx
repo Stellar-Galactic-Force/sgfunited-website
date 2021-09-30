@@ -17,7 +17,7 @@ ReactDOM.render(
     <div className="font-inter">
       <Router primary={false}>
         <Landing path="/" />
-        <Mint path="mint" />
+        <Mint path="sale-one-mint" />
         <NFT path="nft" />
         <Roadmap path="roadmap" />
         <Tokenomics path="tokenomics" />
