@@ -66,6 +66,19 @@ function Nav() {
                 </li>
                 <li>
                   <Link
+                    to="/game"
+                    className={
+                      pathname === "/game" && "text-primary-light nav-glow"
+                    }
+                  >
+                    PvP Game
+                  </Link>
+                </li>
+                <li>
+                  <a href={pathname === "/" ? "#team" : "/#team"}>team</a>
+                </li>
+                <li>
+                  <Link
                     to="/faq"
                     className={
                       pathname === "/faq" && "text-primary-light nav-glow"
@@ -73,9 +86,6 @@ function Nav() {
                   >
                     faq
                   </Link>
-                </li>
-                <li>
-                  <a href={pathname === "/" ? "#team" : "/#team"}>team</a>
                 </li>
               </ul>
             </nav>

@@ -9,6 +9,7 @@ import NFT from "./pages/NFT";
 import Roadmap from "./pages/Roadmap";
 import Tokenomics from "./pages/Tokenomics";
 import FAQ from "./pages/FAQ";
+import Game from "./pages/Game";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -20,6 +21,7 @@ ReactDOM.render(
         <Roadmap path="roadmap" />
         <Tokenomics path="tokenomics" />
         <FAQ path="faq" />
+        <Game path="game" />
       </Router>
     </div>
   </React.StrictMode>,

@@ -89,6 +89,15 @@ html {
   background-image: url("../assets/common/stars-bg.png");
 }
 
+#game-hero {
+  background-image: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(11, 12, 34, 0) 0%,
+      #101010 100%
+    ),
+    url("../assets/common/stars-bg.png");
+}
+
 #tokenomics-hero {
   background-image: url("../assets/tokenomics/planet-shot.png");
 }
