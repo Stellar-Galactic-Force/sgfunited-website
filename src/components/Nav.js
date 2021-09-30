@@ -1,10 +1,10 @@
-import { useState } from "react";
-import { Link, useLocation } from "@reach/router";
+import { useState } from 'react';
+import { Link, useLocation } from '@reach/router';
 
-import Discord from "../assets/icons/discord.svg";
-import Twitter from "../assets/icons/twitter.svg";
+import Discord from '../assets/icons/discord.svg';
+import Twitter from '../assets/icons/twitter.svg';
 
-import LogoImage from "../assets/common/Logo.svg";
+import LogoImage from '../assets/common/Logo.svg';
 
 function Nav() {
   const { pathname } = useLocation();
@@ -14,7 +14,7 @@ function Nav() {
       <header className="text-white bg-black fixed z-20 top-0 inset-x-0 hidden lg:flex flex-col">
         <div className="bg-gradient-to-r from-red-600 to-red-800 py-2 text-center px-16 uppercase font-bold italic">
           Sale 1 Date Announced • MINT PRICE: 0.42069 SOL • 30th September, 6PM
-          UTC •{" "}
+          UTC •{' '}
           <a
             href="https://cutt.ly/MET3RIM"
             target="_blank"
@@ -37,7 +37,7 @@ function Nav() {
                   <Link
                     to="/nft"
                     className={
-                      pathname === "/nft" && "text-primary-light nav-glow"
+                      pathname === '/nft' && 'text-primary-light nav-glow'
                     }
                   >
                     gen-1 nft drop
@@ -47,7 +47,7 @@ function Nav() {
                   <Link
                     to="/roadmap"
                     className={
-                      pathname === "/roadmap" && "text-primary-light nav-glow"
+                      pathname === '/roadmap' && 'text-primary-light nav-glow'
                     }
                   >
                     roadmap
@@ -57,8 +57,8 @@ function Nav() {
                   <Link
                     to="/tokenomics"
                     className={
-                      pathname === "/tokenomics" &&
-                      "text-primary-light nav-glow"
+                      pathname === '/tokenomics' &&
+                      'text-primary-light nav-glow'
                     }
                   >
                     tokenomics
@@ -81,7 +81,7 @@ function Nav() {
                   <Link
                     to="/faq"
                     className={
-                      pathname === "/faq" && "text-primary-light nav-glow"
+                      pathname === '/faq' && 'text-primary-light nav-glow'
                     }
                   >
                     faq
@@ -112,7 +112,7 @@ function Nav() {
       <header className="text-white bg-black fixed z-20 top-0 inset-x-0  lg:hidden">
         <div className="bg-gradient-to-r from-red-600 to-red-800 py-3 text-center uppercase font-bold italic text-xs">
           Sale 1 Date Announced • MINT PRICE: 0.42069 SOL • 30th September, 6PM
-          UTC •{" "}
+          UTC •{' '}
           <a
             href="https://cutt.ly/MET3RIM"
             target="_blank"
@@ -132,14 +132,14 @@ function Nav() {
         </nav>
         <nav
           className={`mt-5 text-xl font-orb pb-6 px-5 font-medium ${
-            menuOpen ? "block" : "hidden"
+            menuOpen ? 'block' : 'hidden'
           }`}
         >
           <ul className="space-y-5 uppercase">
             <li>
               <Link
                 to="/nft"
-                className={pathname === "/nft" && "text-primary-light nav-glow"}
+                className={pathname === '/nft' && 'text-primary-light nav-glow'}
               >
                 Gen-1 NFT drop
               </Link>
@@ -148,7 +148,7 @@ function Nav() {
               <Link
                 to="/roadmap"
                 className={
-                  pathname === "/roadmap" && "text-primary-light nav-glow"
+                  pathname === '/roadmap' && 'text-primary-light nav-glow'
                 }
               >
                 Roadmap
@@ -158,7 +158,7 @@ function Nav() {
               <Link
                 to="/tokenomics"
                 className={
-                  pathname === "/tokenomics" && "text-primary-light nav-glow"
+                  pathname === '/tokenomics' && 'text-primary-light nav-glow'
                 }
               >
                 Tokenomics
@@ -167,7 +167,7 @@ function Nav() {
             <li>
               <Link
                 to="/faq"
-                className={pathname === "/faq" && "text-primary-light nav-glow"}
+                className={pathname === '/faq' && 'text-primary-light nav-glow'}
               >
                 FAQs
               </Link>
@@ -199,7 +199,7 @@ function Nav() {
 
 export default Nav;
 
-const Logo = () => <img src={LogoImage} alt="Logo" />;
+export const Logo = () => <img src={LogoImage} alt="Logo" />;
 
 const MenuIcon = () => (
   <svg
