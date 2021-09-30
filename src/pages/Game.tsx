@@ -7,7 +7,7 @@ import Twitter from "../assets/icons/twitter.svg";
 import useScrollToTop from "../lib/useScrollToTop";
 
 function Game(props: RouteComponentProps) {
-  //   useScrollToTop();
+  useScrollToTop();
   return (
     <div className="min-h-screen" style={{ background: "#101010" }}>
       <Nav />
