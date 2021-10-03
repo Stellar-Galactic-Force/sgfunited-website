@@ -13,7 +13,16 @@ function Nav() {
     <>
       <header className="text-white bg-black fixed z-20 top-0 inset-x-0 hidden lg:flex flex-col">
         <div className="bg-gradient-to-r from-red-600 to-red-800 py-2 text-center px-16 uppercase font-bold italic">
-          • Sale 1 SOLD OUT IN 4 MINUTES • SALE 2 NEXT WEEK •
+          • SALE 2: 7th October | Mint Price 0.99 SOL | Supply 8k •{" "}
+          <a
+            href="https://bit.ly/2ZXaau9"
+            target="_blank"
+            rel="noreferrer"
+            className="underline"
+          >
+            Add to calendar
+          </a>{" "}
+          • Sale 1 SOLD OUT IN 4 MINUTES •
         </div>
         <div className="flex justify-between items-center mt-auto flex-1 px-16 pb-3 pt-4">
           <div className="flex items-center space-x-10">
@@ -102,16 +111,16 @@ function Nav() {
 
       <header className="text-white bg-black fixed z-20 top-0 inset-x-0  lg:hidden">
         <div className="bg-gradient-to-r from-red-600 to-red-800 py-3 text-center uppercase font-bold italic text-xs">
-          Sale 1 Date Announced • MINT PRICE: 0.42069 SOL • 30th September, 6PM
-          UTC •{" "}
+          • SALE 2: 7th October | Mint Price 0.99 SOL | Supply 8k •{" "}
           <a
-            href="https://cutt.ly/MET3RIM"
+            href="https://bit.ly/2ZXaau9"
             target="_blank"
             rel="noreferrer"
             className="underline"
           >
-            Add to your calendar
-          </a>
+            Add to calendar
+          </a>{" "}
+          • Sale 1 SOLD OUT IN 4 MINUTES •
         </div>
         <nav className="flex justify-between items-center w-full h-16 px-5">
           <Link to="/">

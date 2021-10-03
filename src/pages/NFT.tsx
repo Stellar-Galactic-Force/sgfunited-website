@@ -182,8 +182,15 @@ function NFT(props: RouteComponentProps) {
               </div>
             </div>
             <div className="grid grid-rows-2 lg:space-y-5 space-y-2">
-              <div className="text-3xl whitespace-nowrap truncate font-inter italic">
-                TBD
+              <div className="text-2xl whitespace-nowrap truncate font-inter italic">
+                <a
+                  href="https://bit.ly/2ZXaau9"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="underline"
+                >
+                  7th Oct, 6PM UTC
+                </a>
               </div>
               <div className="text-lg whitespace-nowrap truncate">
                 mint date

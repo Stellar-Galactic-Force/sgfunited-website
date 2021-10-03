@@ -103,17 +103,16 @@ function Landing(props) {
             pauseOnClick={true}
           >
             <div className="relative z-10  space-x-2  py-3 font-medium text-xs lg:text-lg">
-              <span>Sale 1 SOLD OUT IN 4 MINUTES • SALE 2 NEXT WEEK *</span>
-              <span className="underline">
-                <a
-                  href="https://discord.com/invite/bBeHKHHSu5"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  JOIN DISCORD
-                </a>
-              </span>
-              <span>* SALE 2: Supply 8k • Mint Price 0.99 SOL *</span>
+              • SALE 2: 7th October | Mint Price 0.99 SOL | Supply 8k •{" "}
+              <a
+                href="https://bit.ly/2ZXaau9"
+                target="_blank"
+                rel="noreferrer"
+                className="underline"
+              >
+                Add to calendar
+              </a>{" "}
+              • Sale 1 SOLD OUT IN 4 MINUTES •
             </div>
           </Marquee>
 
