@@ -103,7 +103,7 @@ function Landing(props) {
             pauseOnClick={true}
           >
             <div className="relative z-10  space-x-2  py-3 font-medium text-xs lg:text-lg">
-              • SALE 2: 7th October | Mint Price 0.99 SOL | Supply 8k •{" "}
+              SALE 2 {"-"} 7th October • Mint Price 0.99 SOL • Supply 8k |{" "}
               <a
                 href="https://bit.ly/2ZXaau9"
                 target="_blank"
@@ -112,7 +112,7 @@ function Landing(props) {
               >
                 Add to calendar
               </a>{" "}
-              • Sale 1 SOLD OUT IN 4 MINUTES •
+              | Sale 1 SOLD OUT IN 4 MINUTES
             </div>
           </Marquee>
 

@@ -82,7 +82,7 @@ function Roadmap(props: RouteComponentProps) {
                   <div className="flex flex-wrap text-sm">
                     <p className="mr-3">Mint: 0.99 SOL</p>
                     <p className="mr-3">Supply: 8k</p>
-                    <p className="mr-3">Date: TBD</p>
+                    <p className="mr-3">Date: 7th October, 6PM UTC</p>
                   </div>
                 </div>
                 <p className="text-lg mt-7 font-medium text-gray">
