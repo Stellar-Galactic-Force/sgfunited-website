@@ -102,17 +102,9 @@ function Landing(props) {
             pauseOnHover={true}
             pauseOnClick={true}
           >
-            <div className="relative z-10  space-x-2  py-3 font-medium text-xs lg:text-lg">
-              SALE 2 {"-"} 7th October • Mint Price 0.99 SOL • Supply 8k |{" "}
-              <a
-                href="https://bit.ly/2ZXaau9"
-                target="_blank"
-                rel="noreferrer"
-                className="underline"
-              >
-                Add to calendar
-              </a>{" "}
-              | Sale 1 SOLD OUT IN 4 MINUTES
+            <div className="relative z-10  space-x-2  py-3 font-medium text-xs lg:text-lg font-bold">
+              | Sale 1 • 2k Supply • SOLD OUT IN 4 MINUTES | Sale 2 • 8k Supply
+              • SOLD OUT IN 6 MINUTES |
             </div>
           </Marquee>
 

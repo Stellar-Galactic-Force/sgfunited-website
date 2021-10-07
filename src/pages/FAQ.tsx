@@ -55,6 +55,11 @@ function FAQ(props: RouteComponentProps) {
         "Yes, the Gen-1 Cyborgs will be available on multiple marketplaces. Details will come out after the second sale.",
     },
     {
+      question: "How much will be royalties?",
+      answer:
+        "Royalties will be 7.5%. Plus, the fee of the marketplace which varies between 1.5-2.5%",
+    },
+    {
       question: "Do you have a long-term roadmap?",
       answer: "Yes, please read more about it on our Roadmap page.",
     },
