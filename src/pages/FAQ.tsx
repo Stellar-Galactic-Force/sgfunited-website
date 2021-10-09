@@ -33,8 +33,7 @@ function FAQ(props: RouteComponentProps) {
     },
     {
       question: "On which marketplaces can I buy the Cyborgs?",
-      answer:
-        "MagicEden, Solanart, and Solsea. We'll be listed on DigitalEyez too, soon.",
+      answer: "MagicEden, Solanart, DigitalEyez, and Solsea.",
     },
     {
       question: "How much will be royalties?",

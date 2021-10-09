@@ -113,7 +113,7 @@ function Roadmap(props: RouteComponentProps) {
                     marketplaces to launch secondary marketplace listing.
                   </p>
                   <p className="mt-5">
-                    Cyborgs are available on these marketplaces currently -
+                    Cyborgs are available on four marketplaces currently -
                     <ul className="mt-5 list-disc list-inside space-y-2">
                       <li>
                         <a
@@ -143,6 +143,16 @@ function Roadmap(props: RouteComponentProps) {
                           className="text-primary-light glow underline"
                         >
                           Solsea
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://digitaleyes.market/collections/SGF%20United"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="text-primary-light glow underline"
+                        >
+                          DigitalEyez
                         </a>
                       </li>
                     </ul>
