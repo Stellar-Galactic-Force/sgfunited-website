@@ -104,7 +104,7 @@ function Roadmap(props: RouteComponentProps) {
                     GEN-1 SECONDARY MARKETPLACE LISTING LAUNCHED
                   </h4>
                   <div className="text-sm">
-                    <p>Date: TBD</p>
+                    <p>Date: 7th October, 6PM UTC</p>
                   </div>
                 </div>
                 <p className="text-lg mt-7 font-medium text-gray">
@@ -113,8 +113,39 @@ function Roadmap(props: RouteComponentProps) {
                     marketplaces to launch secondary marketplace listing.
                   </p>
                   <p className="mt-5">
-                    Some people may want to opt-out after feeling the intense
-                    pressure from the training.
+                    Cyborgs are available on these marketplaces currently -
+                    <ul className="mt-5 list-disc list-inside space-y-2">
+                      <li>
+                        <a
+                          href="http://bit.ly/3BjI8GO"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="text-primary-light glow underline"
+                        >
+                          MagicEden
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="http://bit.ly/3oMQByP"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="text-primary-light glow underline"
+                        >
+                          Solanart
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://bit.ly/3uU1"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="text-primary-light glow underline"
+                        >
+                          Solsea
+                        </a>
+                      </li>
+                    </ul>
                   </p>
                 </p>
               </div>
