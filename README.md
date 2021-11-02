@@ -8,6 +8,8 @@ To contribute to the project -
 2. Create a new branch - `git checkout -b <branch_name>`
 3. When you're done implementing, push your changes and create a pull request.
 
+Feel free to either scour through the existing Github Issues and comment on the issue you'd like to take up. Or, create Github Issue for any suggestions you'd have.
+
 ## Project Set Up
 
 ### Prerequisites
