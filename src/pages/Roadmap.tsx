@@ -137,7 +137,7 @@ function Roadmap(props: RouteComponentProps) {
                       </li>
                       <li>
                         <a
-                          href="https://bit.ly/3uU1"
+                          href="https://solsea.io/collection/616038fd6d3154c2fc608fff"
                           target="_blank"
                           rel="noreferrer"
                           className="text-primary-light glow underline"
