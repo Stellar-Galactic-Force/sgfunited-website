@@ -8,18 +8,15 @@ import reportWebVitals from "./reportWebVitals";
 import NFT from "./pages/NFT";
 import Roadmap from "./pages/Roadmap";
 import Tokenomics from "./pages/Tokenomics";
-// import Mint from './App';
 
 import FAQ from "./pages/FAQ";
 import Game from "./pages/Game";
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <App /> */}
     <div className="font-inter">
       <Router primary={false}>
         <Landing path="/" />
-        {/* <Mint path="final-sale-two-mint" /> */}
         <NFT path="nft" />
         <Roadmap path="roadmap" />
         <Tokenomics path="tokenomics" />
